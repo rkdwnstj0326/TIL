@@ -65,7 +65,7 @@ def greet(name, age):
 greet(name='Dave', age=35)  # 안녕하세요, Dave님! 35살이시군요.
 greet(age=35, name='Dave')  # 안녕하세요, Dave님! 35살이시군요.
 greet(age=35, 'Dave')  # Positional argument cannot appear after keyword arguments
-#greet('Dave', age=35)
+# greet('Dave', age=35)
 
 ######################################################################## 
 
@@ -132,5 +132,3 @@ args: (4, 5, 6)
 kwargs: {'key1': 'value1', 'key2': 'value2'}
 """
 
-#프린트 함수는 어떻게 몇개 인자가 들어올지 예상을 하는가
-print(12, 3, 4, 100, 'asdasd')

@@ -94,10 +94,3 @@ print(len(my_str))  # 5
 # 4. 문자열은 불변
 # TypeError: 'str' object does not support item assignment
 my_str[1] = 'z'
-
-
-
-my_str = 'hello'
-# 재할당
-my_str = 'hallo'
-# 문자열은 불변이므로, 기존 문자열을 바꾸는 것이 아니라 새로운 문자열을 만들어 변수에 재할당하는 것임

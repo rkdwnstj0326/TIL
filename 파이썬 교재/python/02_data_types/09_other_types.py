@@ -7,6 +7,11 @@
 # None
 my_variable = None
 print(my_variable)  # None
+print(type(my_variable))  # <class 'NoneType'>
+
+a = []  # 빈 리스트
+b = [None, 1, 2]  # 첫번째 요소가 None 데이터를 가진 리스트
+
 
 # =============================================================
 # [2] 불리언(bool)
