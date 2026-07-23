@@ -8,8 +8,8 @@
 
 # find
 text = 'banana'
-print(text.find('a'))  # 1
-print(text.find('z'))  # -1
+print(text.find('A'))  # 1
+print(text.find('Z'))  # -1
 
 # =============================================================
 # [검증] is~ 계열 - 조건에 맞는지 True/False로 답함
