@@ -6,4 +6,7 @@
 # =============================================================
 
 # import 문 사용
-pass
+import math
+
+print(math.pi)
+print(math.sqrt(4))

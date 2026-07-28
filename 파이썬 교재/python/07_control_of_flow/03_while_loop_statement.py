@@ -20,7 +20,7 @@
 # while문 기본
 count = 1
 
-while count <=3:
+while count <= 3:
 #3보다 커질 때 가지 돈다.
     print(count)
     count = count +1

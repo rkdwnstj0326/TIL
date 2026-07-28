@@ -6,13 +6,17 @@
 # =============================================================
 
 # from 절 사용
-pass
+from math import pi,sqrt
+
+print(pi)
+print(sqrt)
+
 
 
 # 실무에서 from 절이 표준인 대표사례
-from datetime import datetime  # datetime.datetime.now() 는 너무 장황
-from collections import Counter
-from django.shortcuts import render, redirect
+# from datetime import datetime  # datetime.datetime.now() 는 너무 장황
+# from collections import Counter
+# from django.shortcuts import render, redirect
 
 # =============================================================
 # [2] 주의 사항 - 다른 모듈의 같은 이름끼리도 충돌

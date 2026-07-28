@@ -14,7 +14,7 @@
 student_list = ['Alice', 'Bob', 'Charlie']
 
 for student in student_list:
-    print(item)
+    print(f"Hello, {student}!")
     
 
 
