@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /*
+      자손 결합자:
+      div 안에 있는 모든 p 태그를 선택한다.
+      바로 아래 자식뿐만 아니라 더 깊이 들어 있는 자손도 포함한다.
+    */
+    div p {
+      color: blue;
+    }
+
+    /*
+      자식 결합자:
+      div 바로 아래에 있는 p 태그만 선택한다.
+    */
+    div > p {
+      color: crimson;
+    }
+
+    p {
+      font-size: 30px;
+      margin: 30px 0;
+    }
+
+    .grandchild {
+      margin-left: 75px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>자식</p>
+
+    <section class="grandchild">
+      <p>손자</p>
+    </section>
+
+    <p>자식</p>
+  </div>
+</body>
+</html>

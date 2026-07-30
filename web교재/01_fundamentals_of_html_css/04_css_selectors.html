@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 전체 선택자 */
+    * {
+      color: red;
+    }
+
+    /* 요소 선택자 */
+    h2 {
+      color: orange;
+    }
+
+    h3,
+    h4 {
+      color: blue;
+    }
+
+    /* 클래스 선택자 */
+    .point-text {
+      color: green;
+    }
+
+    /* id 선택자 */
+    #course-title {
+      color: purple;
+    }
+
+    /* 속성 선택자 */
+    [class^="sub"] {
+      color: yellow;
+    }
+
+    /* 자식 결합자 */
+    .point-text>span {
+      font-size: 50px;
+    }
+
+    /* 자손 결합자 */
+    .point-text li {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="point-text">Heading</h1>
+  <h2>선택자 연습</h2>
+  <h3>Hello</h3>
+  <h4>Nice to meet you</h4>
+  <p id="course-title">과목 목록</p>
+  <ul class="point-text">
+    <li>파이썬</li>
+    <li>알고리즘</li>
+    <li>웹
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PYTHON</li>
+      </ol>
+    </li>
+  </ul>
+  <p class="point-text">
+    Lorem, <span>ipsum</span> dolor.
+  </p>
+  <p class="sub-note">TEST</p>
+</body>
+
+
+</html>

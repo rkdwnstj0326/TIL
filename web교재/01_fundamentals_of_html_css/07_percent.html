@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .unit-parent {
+      width: 400px;
+      /* width: 100% */
+      background-color: lightgray;
+    }
+
+    .child-percent {
+      width: 50%;
+      /* 부모의 400px 기준 ==> 200px */
+      background-color: orange;
+    }
+
+    .child-px {
+      width: 200px;
+      /* 부모와 무관하게 고정 */
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="unit-parent">
+    부모 요소 (width: 400px)
+    <div class="child-percent">
+      % 단위 자식 (width: 50% ==> 200px)
+    </div>
+    <div class="child-px">
+      px 단위 자식 (width: 200px ==> 항상 200px)
+    </div>
+  </div>
+
+</body>
+
+</html>
