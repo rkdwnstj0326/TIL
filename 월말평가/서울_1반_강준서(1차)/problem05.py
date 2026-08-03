@@ -5,9 +5,14 @@
 # 가산점(+3점): 제한 내장 함수 없이 직접 구현 (총 12점)
 
 def count_items(inventory):
-    for i in inventory:
-        for j in i:
-            return max(map(int, [j]))
+    count = 0
+
+    for bag in inventory: #inventory에서 bag를 꺼냄. 그럼 [101,0,205]가 나옴
+        for item in bag: #bag에서 item을 꺼냄 -> 그럼 101, 0 205 를 꺼냄
+            if item: # item이 있다면~~ 즉 0 이 아닌 숫자가 있다면
+                count = count + 1 # 갯수를 누적하라
+    return count
+
     # return str(map(len, inventory))
     # result = 0
     # j=0

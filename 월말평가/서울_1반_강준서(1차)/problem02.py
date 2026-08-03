@@ -5,11 +5,16 @@
 # 가산점(+3점): 제한 내장 함수 없이 직접 구현 (총 12점)
 
 def count_long_names(names, min_length):
+    count = 0
+
     for name in names:
-        if len(name) >= int(min_length):
-            return len(name)
-        else:
-            return '0'
+        if len(name) >= min_length:
+            count = count + 1
+
+    return count
+        # else:
+        #     return '0'
+
 
     # 반복문을 활용해서 숫자보다 길이가 긴지 출력   
 
