@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소셜 커머스 페이지</title>
+  
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* 이미지 크기 고정 및 비율 유지용 유틸리티 클래스 (OOCSS) */
+    .product-img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container my-4">
+    
+    <!-- ==========================================
+         1. 상단 섹션 (주목 상품 & 카테고리)
+         ========================================== -->
+    <div class="row mb-5">
+      
+      <!-- 주목 상품 (992px 미만: 12칸 / 992px 이상: 9칸) -->
+      <div class="col-12 col-lg-9">
+        <h2 class="mb-3">주목 상품</h2>
+        
+        <!-- 상품 1 -->
+        <div class="mb-4">
+          <img src="assets/product1.jpg" class="product-img mb-2" alt="상품 1">
+          <h4>상품 1</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor eu felis at tristique.</p>
+        </div>
+
+        <!-- 상품 2 -->
+        <div class="mb-4">
+          <img src="assets/product2.jpg" class="product-img mb-2" alt="상품 2">
+          <h4>상품 2</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor eu felis at tristique.</p>
+        </div>
+
+        <!-- 상품 3 -->
+        <div class="mb-4">
+          <img src="assets/product3.jpg" class="product-img mb-2" alt="상품 3">
+          <h4>상품 3</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor eu felis at tristique.</p>
+        </div>
+      </div>
+
+      <!-- 카테고리 (992px 미만: 숨김 / 992px 이상: 3칸) -->
+      <div class="d-none d-lg-block col-lg-3">
+        <h2 class="mb-3">카테고리</h2>
+        <ul class="list-group">
+          <li class="list-group-item">의류 / 패션</li>
+          <li class="list-group-item">화장품 / 뷰티</li>
+          <li class="list-group-item">전자기기</li>
+          <li class="list-group-item">생활용품</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         2. 하단 섹션 (인기 상품, 신상품, 특별 할인)
+         ========================================== -->
+    <div class="row g-4">
+
+      <!-- 2-1. 인기 상품 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4 offset-lg-0">
+        <h2 class="mb-3">인기 상품</h2>
+        <div class="mb-4">
+          <img src="assets/product4.jpg" class="product-img mb-2" alt="인기 상품 1">
+          <h4>인기 상품 1</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="mb-4">
+          <img src="assets/product5.jpg" class="product-img mb-2" alt="인기 상품 2">
+          <h4>인기 상품 2</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <!-- 2-2. 신상품 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4 offset-lg-0">
+        <h2 class="mb-3">신상품</h2>
+        <div class="mb-4">
+          <img src="assets/product6.jpg" class="product-img mb-2" alt="신상품 1">
+          <h4>신상품 1</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="mb-4">
+          <img src="assets/product7.jpg" class="product-img mb-2" alt="신상품 2">
+          <h4>신상품 2</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <!-- 2-3. 특별 할인 -->
+      <div class="col-12 col-md-10 offset-md-2 col-lg-4 offset-lg-0">
+        <h2 class="mb-3">특별 할인</h2>
+        <div class="mb-4">
+          <img src="assets/product8.jpg" class="product-img mb-2" alt="할인 상품 1">
+          <h4>할인 상품 1</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="mb-4">
+          <img src="assets/product9.jpg" class="product-img mb-2" alt="할인 상품 2">
+          <h4>할인 상품 2</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
