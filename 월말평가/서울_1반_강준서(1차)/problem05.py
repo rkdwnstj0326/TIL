@@ -11,6 +11,7 @@ def count_items(inventory):
         for item in bag: #bag에서 item을 꺼냄 -> 그럼 101, 0 205 를 꺼냄
             if item: # item이 있다면~~ 즉 0 이 아닌 숫자가 있다면
                 count = count + 1 # 갯수를 누적하라
+
     return count
 
     # return str(map(len, inventory))
