@@ -67,7 +67,7 @@
 
 # enumerate() : 리스트를 반복할 때, 값만 주는게 아니라 그 값의 인덱스 번호까지 같이 주는 함수
 
-# 1트 (대실패)
+# # 1트 (대실패)
 def find_hottest_day(temps):
     total = [0]
     for temp in temps:
@@ -75,7 +75,7 @@ def find_hottest_day(temps):
             total = total + 1
     return(temp)
 
-# 2트(지피티 한번 돌림)
+# # 2트(지피티 한번 돌림)
 def find_hottest_day(temps):
     high = temps[0]         # 가장 높은 기온을 찾아야 한다. 그러기 위해서는 비교할 기준이 필요함. 현재 최고 기온은 일단 첫번재 값 21이라고 해두자 라고 하고 시작
     high_index = 0          # 문제에서 원하는 답이 기온자체가 아닌 인덱스이기 때문에 필요
@@ -116,3 +116,4 @@ def find_hottest_day(temps):
 print(find_hottest_day([21, 25, 25, 19]))
 print(find_hottest_day([30]))
 print(find_hottest_day([-5, -12, -3, -8]))
+
