@@ -111,9 +111,78 @@
 # 4. [동점일 때 번호가 작은 쪽을 남기려면 부등호를 무엇으로 쓸 것인가]
 #    [왜]
 
+# 일단 정답을 받을 result = ()을 생성
+# 일단 첫번째 for문으로 각 학생들의 점수표를 꺼내야 한다.
+# 그리고 각 리스트 점수의 합을 구한다
+# 그리고 그 총점 중에서 누구의 점수가 더 큰지 찾는다
+# 그리고 큰 값을 반환한다.
+# 그런 다음음에 각 과목별로 점수를 더한다.
+# 그리고 그 제일 과목이 큰 인덱스를반환
+# 이럴려면 각 점수에 인덱스를 부여해야한다.
 
+# #1
+# def find_top_student_and_subject(scores):
+#     result = ()
+
+#     for score in scores:
+#         total = 0
+#         for s in score:
+#             total = total + s #일단이렇게 하면 총 합을 구할 수가 있음. 근데 더 큰 값을 어떻게 구하지
+
+
+#2
 def find_top_student_and_subject(scores):
-    pass
+    stu_max = [] #학생 총점
+    score_max = [] 
+
+    for score in scores:
+        total = 0
+        for s in score:
+            total = total + s 
+
+        stu_max.append(total)  
+
+    for c in range(len(scores[0])): #여기서 한번 삐끗
+        total_scores = 0
+        for r in range(len(scores)):
+            total_scores = total_scores + scores[r][c] # 여기서 한번 막혓습니다 그치만 지피티는 쓰지 않앗더요
+
+        score_max.append(total_scores)
+
+    # 여기서 막혔습ㄴ디ㅏ. 제가 생각했던 방식이 있었는데 구현하지 못해서, 원석님이 enumerate사용을 도와주셧으요
+    # 학생 총점 리스트 stu_max에서 가장 큰 총점의 학생 번호를 찾아야함
+    max_student_score = stu_max[0] #0번 학생의 총점 6을 현재 최고점이라고 가정한다
+    stu_max_index = 0 # 현재 최고점 학생 번호도 일단 0번이락고 저장한다.
+    for index, stu in enumerate(stu_max): #enumerate()로 인덱스와 값을 같이 꺼낸다
+        if stu > max_student_score: # 지금보고 있는 학생 총점 stu가 지금까지 최고점보다 큰지 비교
+            max_student_score = stu # 크면 최고점 바꿈
+            stu_max_index = index #인덱스도 바꿈
+
+
+    max_subject_score = score_max[0]
+    score_max_index = 0
+
+    for index, subject in enumerate(score_max):
+        if subject > max_subject_score:
+            max_subject_score = subject
+            score_max_index = index
+
+    return (stu_max_index, score_max_index)
+
+    # 제가 쓰고 싶었던 코드는 enumerate를 안쓰고, 기준 인덱스를 하나 잡아서, 그 다음 인덱스랑 크기 비교를 해서
+    # 조건문?반복문으로 작으면 넘기고 큰거면 그 값을 기준인덱스에 넣어서 비교할게 없을 때 까지 돌리는 방법? 을 생각햇습니다
+
+    #정리하자면    
+    #처음 값을 기준값으로 잡고, 그다음 값부터 하나씩 비교한다.
+    # 현재 값이 기준값보다 작거나 같으면 그대로 넘어가고, 더 크면 그 값을 새로운 기준값으로 바꾼다.
+    # 이때 그 값의 인덱스도 같이 기억한다.
+    # 리스트 끝까지 반복한 뒤 마지막에 남아 있는 기준값의 인덱스를 최고값의 위치로 사용한다.
+
+
+
+
+
+
 
 
 # ============================================================
@@ -167,7 +236,7 @@ def find_top_student_and_subject(scores):
 
 
 # ---- 확인용 출력 (수정하지 마세요) ----
-print(find_top_student_and_subject([[1, 2, 3], [4, 5, 6]]))
+print(find_top_student_and_subject([[1, 2, 3], [4, 5, 6]]))#
 print(find_top_student_and_subject([[50]]))
 print(find_top_student_and_subject([[3, 1], [1, 3]]))
 print(find_top_student_and_subject([[1, 5], [2, 4], [3, 3]]))
