@@ -1,0 +1,3099 @@
+{
+  "generated_at": "2026-10-23T03:46:01.924220+00:00",
+  "baseline_sha256": "851fbbe36eb8ede921f8ddac7b7ac5b4d814d2d106438b6226e23bf4d0bc7870",
+  "baseline_unchanged": true,
+  "baseline_observations": 483,
+  "observations": 2303,
+  "added_observations": 1820,
+  "company_count": 21,
+  "company_quarter_items": 177,
+  "period_counts": {
+    "2024Q1": 18,
+    "2024Q2": 18,
+    "2024Q3": 17,
+    "2024Q4": 17,
+    "2025Q1": 18,
+    "2025Q2": 19,
+    "2025Q3": 17,
+    "2025Q4": 17,
+    "2026Q1": 18,
+    "2026Q2": 18
+  },
+  "sources": [
+    {
+      "source_id": "knia_history_2024q2",
+      "source_page": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2024&01_seasrchQuarter=2",
+      "document": {
+        "url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2024&01_seasrchQuarter=2",
+        "final_url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2024&01_seasrchQuarter=2",
+        "local_path": "data/raw/d02237d060bb1c952f9d29ad6ebf8cdb9755a73c0ab7ab527b5dacf431486a01.html",
+        "sha256": "04a497cb6460943023ea5757b6ca9d985cd0654044c44bcc3d7345478c8cb404",
+        "bytes": 853586,
+        "retrieved_at": "2026-10-23T03:43:27.181459+00:00",
+        "content_type": "text/html; charset=UTF-8",
+        "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+      },
+      "expected_periods": [
+        "2024Q1",
+        "2024Q2"
+      ],
+      "actual_companies": 18,
+      "observations": 468
+    },
+    {
+      "source_id": "knia_history_2024q4",
+      "source_page": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2024&01_seasrchQuarter=4",
+      "document": {
+        "url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2024&01_seasrchQuarter=4",
+        "final_url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2024&01_seasrchQuarter=4",
+        "local_path": "data/raw/c379de3d487c4ddaffa532eed561ef7daf9b60d3198b87d8cb99c200ac69c451.html",
+        "sha256": "f9680fc4a2c5e0089e58d57cf0d031e9a94052c6658b237a72e15d58e49baf2f",
+        "bytes": 853428,
+        "retrieved_at": "2026-10-23T03:43:28.468545+00:00",
+        "content_type": "text/html; charset=UTF-8",
+        "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+      },
+      "expected_periods": [
+        "2024Q3",
+        "2024Q4"
+      ],
+      "actual_companies": 17,
+      "observations": 442
+    },
+    {
+      "source_id": "knia_history_2025q2",
+      "source_page": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=2",
+      "document": {
+        "url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=2",
+        "final_url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=2",
+        "local_path": "data/raw/45fe6b509e3df5e870af9572912e9d020e2823fb33b2b5356079bf476f8544ab.html",
+        "sha256": "c34a0fc45c0b2dfefccb14ef5016e25ba03e914d9666891d7986ded011d8e0ba",
+        "bytes": 890896,
+        "retrieved_at": "2026-10-23T03:43:29.777844+00:00",
+        "content_type": "text/html; charset=UTF-8",
+        "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+      },
+      "expected_periods": [
+        "2025Q1",
+        "2025Q2"
+      ],
+      "actual_companies": 19,
+      "observations": 481
+    },
+    {
+      "source_id": "knia_history_2025q4",
+      "source_page": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=4",
+      "document": {
+        "url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=4",
+        "final_url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=4",
+        "local_path": "data/raw/47066d3e45395ec8fe264c7b957ed4cb5e8319e3b0f7f75a4ce7c6f4bc233a0a.html",
+        "sha256": "7a2177981a0ee49dbc0bc4135726cd8c764fda3f80119c2d11e085d7bf3d03b2",
+        "bytes": 816138,
+        "retrieved_at": "2026-10-23T03:40:21.955476+00:00",
+        "content_type": "text/html; charset=UTF-8",
+        "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+      },
+      "expected_periods": [
+        "2025Q3",
+        "2025Q4"
+      ],
+      "actual_companies": 17,
+      "observations": 442
+    }
+  ],
+  "checks": [
+    {
+      "check": "AIG손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AIG손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "AXA손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "DB손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "KB손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "MG손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "NH농협손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "교보생명 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "라이나손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "롯데손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "메리츠화재 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "삼성화재 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "서울보증보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "예별손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "카카오페이손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "캐롯손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "코리안리 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "한화손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "현대해상 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2024Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q3 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q3 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q3 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q3 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "흥국화재 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "회사 통계 관측키 유일",
+      "passed": true
+    },
+    {
+      "check": "민원건수 음수/결측 없음",
+      "passed": true
+    }
+  ],
+  "overlap_cross_checks": [
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "접수경로",
+        "자체민원"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "접수경로",
+        "대외민원"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "접수경로",
+        "합계"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "유형",
+        "보험모집"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "유형",
+        "유지관리"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "유형",
+        "보상(보험금)"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "유형",
+        "기타"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "유형",
+        "합계"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "상품",
+        "일반보험"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "상품",
+        "장기보장성보험"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "상품",
+        "장기저축성보험"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "상품",
+        "자동차보험"
+      ],
+      "passed": true
+    },
+    {
+      "key": [
+        "하나손해보험",
+        "2025Q4",
+        "상품",
+        "기타"
+      ],
+      "passed": true
+    }
+  ],
+  "excluded": [
+    {
+      "company": "AIG손해보험",
+      "period": "2024Q4",
+      "reason": "원문 건수 결측: 0으로 채우지 않고 해당 항목 전체 보류"
+    },
+    {
+      "company": "AIG손해보험",
+      "period": "2024Q3",
+      "reason": "원문 건수 결측: 0으로 채우지 않고 해당 항목 전체 보류"
+    },
+    {
+      "company": "AIG손해보험",
+      "period": "2025Q1",
+      "reason": "원문 표의 분류축별 합계 불일치: 항목 전체 보류",
+      "axis_part_sums": {
+        "접수경로": 36,
+        "유형": 36,
+        "상품": 39
+      },
+      "failed_checks": [
+        "AIG손해보험 2025Q1 세 분류축의 총수 일치"
+      ],
+      "source_url": "https://consumer.knia.or.kr/m/disclosure/item/01.do?01_searchYear=2025&01_seasrchQuarter=2"
+    }
+  ],
+  "http_calls": 0,
+  "cache_repeat": {
+    "hits": 4,
+    "http_calls": 0
+  },
+  "definition_change_period": "2024Q2",
+  "rule": "협회 공식 안내에 따른 공시기준 개선. 이전/이후 자동 증감 비교 금지.",
+  "company_identity_note": "원문 회사명을 보존. MG와 예별, 캐롯과 한화 등 회사/계약 이전은 자동 연결하지 않음."
+}

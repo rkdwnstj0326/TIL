@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-22T06:07:44.686592+00:00",
+  "python": "3.12.10",
+  "tests": 30,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 4.747,
+  "pip_check": "No broken requirements found.",
+  "data_prepare_command": "powershell -NoProfile -ExecutionPolicy Bypass -File prepare_data.ps1",
+  "data_prepare_result": "exit 0, existing source cache, zero HTTP calls",
+  "launcher_health": "ok",
+  "launcher_second_run_reused_same_pid": true,
+  "browser_pixel_verification": true,
+  "external_llm_calls": 0,
+  "automatic_ui_verification": "Streamlit AppTest, actual local data, external HTTP blocked",
+  "ui_revision": "2026-10-22 공식 공시 18개사 확장",
+  "mobile_device_verification": false,
+  "insurer_expansion_report": "reports/insurer_ui_validation.json",
+  "insurer_data_prepare_result": "expand_insurers exit 0; 3 cache hits; 0 HTTP calls",
+  "prior_design_protected_data_files_unchanged": 98
+}

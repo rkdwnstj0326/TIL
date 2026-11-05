@@ -1,0 +1,14 @@
+{
+  "as_of_date": "2026-10-23",
+  "instructions_source": "사용자가 전달한 선생님의 최신 제출 안내",
+  "zip_name": "AI_코어프로젝트2_FinVOC금융민원분석AI_서울_1반_강준서.zip",
+  "filename_template": "AI_코어프로젝트2_주제명_지역_반_성명.zip",
+  "entry_url": "https://abit.ly/0i3bjzz",
+  "confirmed_parent_folder_url": "https://drive.google.com/drive/folders/1hf_V_9ZQ0hNrx_kUVYjNU4gAhZZv_DhU",
+  "confirmed_destination_folder_url": "https://drive.google.com/drive/folders/1KiPj_LXw36zPfkYDm4WNh2SBBzUXZU1R",
+  "destination_folder_name": "2회차",
+  "destination_verified_by": "사용자 제공 링크를 브라우저로 열어 AI_Core_프로젝트 → 2회차 폴더 경로 확인",
+  "exclude_virtual_environment": true,
+  "supersedes_earlier_pdf_filename_and_destination": true,
+  "uploaded": false
+}

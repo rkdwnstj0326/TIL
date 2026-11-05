@@ -1,0 +1,14 @@
+{
+  "archive": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\dist\\AI_코어프로젝트2_FinVOC금융민원분석AI_서울_1반_강준서.zip",
+  "safe_paths_checked": true,
+  "crc_passed": true,
+  "actual_gms_calls": 0,
+  "external_http_calls": 0,
+  "data_snapshots_restored_for_test_only": 7,
+  "new_computer_remote_fetch_verified": false,
+  "checks": [
+    "missing-data-guidance-ok",
+    "restored-data-ui-and-key-missing-guidance-ok"
+  ],
+  "passed": true
+}

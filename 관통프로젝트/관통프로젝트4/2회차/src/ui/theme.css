@@ -1,0 +1,64 @@
+:root{--ink:#153248;--muted:#708394;--teal:#078b8d;--line:#e0e7ed;--paper:#fff}
+.stApp{background:#f5f7fa;color:var(--ink)}
+.stApp,button,input,textarea,select{font-family:"Malgun Gothic","Segoe UI",sans-serif}
+header[data-testid="stHeader"]{height:0;background:transparent}
+[data-testid="stToolbar"],[data-testid="stAppDeployButton"],#MainMenu{display:none}
+.block-container{max-width:1250px;padding:1.8rem 2.2rem 3rem}
+h1,h2,h3,h4{color:var(--ink);letter-spacing:-.045em}
+h1{font-size:1.85rem!important;font-weight:750!important;line-height:1.45!important;padding-top:.1rem!important}
+h2{font-size:1.25rem!important}h3{font-size:1.03rem!important;line-height:1.5!important}
+[data-testid="stCaptionContainer"]{font-size:.76rem;line-height:1.65;color:var(--muted)}
+p{line-height:1.75}
+.brandbar{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:0 0 18px;margin-bottom:22px}
+.brandgroup{display:flex;align-items:center;gap:10px}.brandmark{width:30px;height:30px;background:#123547;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none}
+.brandname{font-size:18px;font-weight:800;letter-spacing:-.6px}.brandcontext{color:var(--muted);font-size:12px;border-left:1px solid #d6e0e8;padding-left:13px;margin-left:4px}
+.brandstatus{font-size:11px;color:#167879;background:#e8f5f3;border:1px solid #cee9e5;padding:5px 10px;border-radius:20px;white-space:nowrap}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:1.8px;color:#078b8d;margin-bottom:8px}
+.intro{color:#708394;font-size:13px;line-height:1.8;margin-bottom:10px}
+.st-key-main_nav{margin:4px 0 13px}
+.st-key-main_nav [role="radiogroup"]{gap:4px;background:#eaf0f5;border:1px solid #dfe6ee;padding:5px;border-radius:10px;width:100%;display:flex;flex-wrap:wrap}
+.st-key-main_nav label[data-baseweb="radio"]{margin:0!important;flex:1;justify-content:center;padding:9px 14px;border-radius:7px;cursor:pointer;min-width:110px}
+.st-key-main_nav label[data-baseweb="radio"]>div:first-child{display:none}
+.st-key-main_nav label[data-baseweb="radio"]:has(input:checked){background:#fff;box-shadow:0 1px 4px #1a3a5612}
+.st-key-main_nav label[data-baseweb="radio"]:has(input:checked) p{color:#103b52;font-weight:750}
+.st-key-main_nav label[data-baseweb="radio"]:has(input:focus-visible){outline:2px solid var(--teal);outline-offset:2px}
+.st-key-main_nav p{font-size:13px!important;margin:0}
+.st-key-main_nav [data-testid="stButtonGroup"]{width:100%}
+.st-key-main_nav [data-testid="stButtonGroup"]>div{width:100%;display:flex;background:#eaf0f5;border:1px solid #dfe6ee;padding:5px;border-radius:10px;gap:4px}
+.st-key-main_nav [data-testid="stButtonGroup"] button{flex:1;border:0!important;box-shadow:none;min-height:36px;border-radius:7px!important;color:#587184;background:transparent;font-size:12px!important}
+.st-key-main_nav [data-testid="stButtonGroup"] button[aria-pressed="true"]{background:#fff!important;color:#123e56!important;box-shadow:0 1px 4px #17364c12;font-weight:750}
+.st-key-company_filter,[class*="st-key-card_"]{background:white!important;border-radius:12px;border-color:var(--line)!important}
+.contextsource{float:right;font-size:11px;color:#40848d!important;text-decoration:none!important;font-weight:500}
+[data-testid="stVerticalBlockBorderWrapper"]>div{border-color:var(--line)!important;border-radius:12px!important}
+[data-testid="stVerticalBlockBorderWrapper"]{background:var(--paper);border-radius:12px}
+[data-testid="stMetric"]{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px 19px;min-height:136px;box-shadow:0 2px 5px #12354703}
+[data-testid="stMetricLabel"] p{font-size:12px;color:#60788b;white-space:normal}
+[data-testid="stMetricValue"]{font-size:29px;font-weight:750;color:#14364c;letter-spacing:-1px;line-height:1.6}
+[data-testid="stMetricDelta"]{font-size:11px}
+[data-testid="stMetricDelta"]>div{white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+[data-testid="stSelectbox"] label p,[data-testid="stTextInput"] label p{font-size:12px;font-weight:600;color:#536f83}
+[data-baseweb="select"]>div,[data-testid="stTextInput"] input{border-radius:8px;background:#f7f9fb;border-color:#dce5ec}
+[data-testid="stButton"] button,[data-testid="stLinkButton"] a{border-radius:8px;font-size:12px;font-weight:600;min-height:37px}
+[data-testid="stButton"] button:focus-visible,[data-testid="stLinkButton"] a:focus-visible{outline:2px solid #058b8d;outline-offset:2px}
+[data-testid="stForm"]{background:white;border:1px solid var(--line);border-radius:12px}
+.sectionlabel{font-weight:750;font-size:15px;letter-spacing:-.4px;margin-bottom:4px}
+.smallmeta{font-size:11px;color:var(--muted);line-height:1.8}
+.sectionnote{font-size:12px;color:#748696;line-height:1.8;margin:2px 0 10px}
+.contextline{font-size:12px;color:#4f6f80;margin:0 0 8px;line-height:1.8}
+.contextline strong{font-size:15px;color:#16394f}
+.tag{display:inline-block;font-size:10px;color:#337b86;border:1px solid #d6e8ea;background:#edf7f7;border-radius:5px;padding:2px 7px;vertical-align:middle;margin:0 4px 3px 0}
+.mutedtag{color:#708394;border-color:#e0e7ed;background:#f3f6f8}
+.factcallout{border-left:3px solid #0b9697;background:#f0f8f8;color:#325969;font-size:12px;line-height:1.85;padding:12px 15px;border-radius:0 8px 8px 0;margin:0 0 14px}
+.rankrow{display:flex;align-items:flex-start;gap:11px;padding:10px 0;border-bottom:1px solid #edf1f5}
+.ranknum{flex:none;background:#eaf5f4;border-radius:7px;color:#087e80;font-size:11px;padding:4px 7px;font-weight:750}
+.rankname{font-size:13px;font-weight:700;line-height:1.6}.rankdesc{font-size:11px;color:#738797;line-height:1.7;margin-top:3px}.rankvalue{margin-left:auto;white-space:nowrap;font-weight:750;font-size:14px;color:#153b52}
+.nextquestion{font-size:12px;line-height:1.85;color:#4c6779;margin:12px 0 8px}
+.sourcebox{white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;font-size:13px;line-height:1.95;color:#3f5c70;background:#f6f8fa;border:1px solid #e7edf2;border-radius:9px;padding:14px 16px;margin:8px 0 12px}
+[class*="st-key-case_hit_"]{background:white!important;border-radius:12px;border-color:var(--line)!important}
+.detailtitle{font-size:17px;font-weight:750;line-height:1.7;letter-spacing:-.4px;margin:8px 0}
+.resultcount{font-size:13px;color:#5a7386;margin:5px 0 12px}
+.emptytitle{font-size:17px;font-weight:750;color:#284b63;margin:7px 0}.emptybody{font-size:12px;line-height:1.85;color:#728797}
+.footerline{border-top:1px solid var(--line);margin-top:22px;padding-top:13px;color:#8293a1;font-size:10px;line-height:1.8}
+[data-testid="stDataFrame"]{border-radius:9px;overflow:hidden}
+[data-testid="stExpander"] summary p{font-size:12px}
+@media(max-width:800px){.block-container{padding:1.2rem 1rem 2rem}.brandcontext{display:none}.brandbar{padding-bottom:14px;margin-bottom:18px}h1{font-size:1.5rem!important}.brandname{font-size:16px}.brandstatus{font-size:9px}.st-key-main_nav label[data-baseweb="radio"]{padding:8px 3px;min-width:80px}.st-key-main_nav p{font-size:11px!important}[data-testid="stMetric"]{min-height:118px;padding:12px 15px}[data-testid="stMetricValue"]{font-size:26px}}

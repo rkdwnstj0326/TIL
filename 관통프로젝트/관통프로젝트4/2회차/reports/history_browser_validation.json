@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-23",
+  "actual_browser": true,
+  "url": "http://127.0.0.1:8540/",
+  "hana_quarter_option_count": 10,
+  "period_range": ["2024Q1", "2026Q2"],
+  "hana_2025Q4_observed": {"total":84,"change":21,"claim_type":63,"rate_per_100k":7.33},
+  "hana_2024Q2_observed": {"total":72,"comparison_blocked":true,"warning_visible":true},
+  "quarter_selector_and_rendered_body_match": true,
+  "trend_shows_2024_2025_2026_labels": true,
+  "raw_table_after_render_matches_2025Q4": true,
+  "note": "선택 직후 표 접근성 값은 이전 프레임이 잠시 남았으나 렌더 완료 후14·6·63·1로 갱신된 것을 확인함."
+}

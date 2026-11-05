@@ -1,0 +1,6 @@
+{
+  "url": "https://www.nhlife.co.kr/robots.txt",
+  "status": 200,
+  "text": "User-agent: *\nDisallow: /ho/ig/\nDisallow: /ho/zz/\n",
+  "checked_at": "2026-10-22T05:49:03.279087+00:00"
+}

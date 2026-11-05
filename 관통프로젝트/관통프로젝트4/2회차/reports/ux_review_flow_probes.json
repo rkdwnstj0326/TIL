@@ -1,0 +1,129 @@
+{
+  "automatic_review_http_calls": 0,
+  "all_17_nonlife_company_metrics": [
+    {
+      "company": "AIG손해보험",
+      "expected": "44건",
+      "observed": "44건",
+      "matched": true
+    },
+    {
+      "company": "AXA손해보험",
+      "expected": "130건",
+      "observed": "130건",
+      "matched": true
+    },
+    {
+      "company": "DB손해보험",
+      "expected": "1,880건",
+      "observed": "1,880건",
+      "matched": true
+    },
+    {
+      "company": "KB손해보험",
+      "expected": "1,502건",
+      "observed": "1,502건",
+      "matched": true
+    },
+    {
+      "company": "NH농협손해보험",
+      "expected": "301건",
+      "observed": "301건",
+      "matched": true
+    },
+    {
+      "company": "라이나손해보험",
+      "expected": "29건",
+      "observed": "29건",
+      "matched": true
+    },
+    {
+      "company": "롯데손해보험",
+      "expected": "284건",
+      "observed": "284건",
+      "matched": true
+    },
+    {
+      "company": "메리츠화재",
+      "expected": "1,384건",
+      "observed": "1,384건",
+      "matched": true
+    },
+    {
+      "company": "삼성화재",
+      "expected": "2,026건",
+      "observed": "2,026건",
+      "matched": true
+    },
+    {
+      "company": "서울보증보험",
+      "expected": "146건",
+      "observed": "146건",
+      "matched": true
+    },
+    {
+      "company": "신한EZ손해보험",
+      "expected": "89건",
+      "observed": "89건",
+      "matched": true
+    },
+    {
+      "company": "예별손해보험",
+      "expected": "242건",
+      "observed": "242건",
+      "matched": true
+    },
+    {
+      "company": "카카오페이손해보험",
+      "expected": "9건",
+      "observed": "9건",
+      "matched": true
+    },
+    {
+      "company": "하나손해보험",
+      "expected": "75건",
+      "observed": "75건",
+      "matched": true
+    },
+    {
+      "company": "한화손해보험",
+      "expected": "664건",
+      "observed": "664건",
+      "matched": true
+    },
+    {
+      "company": "현대해상",
+      "expected": "1,735건",
+      "observed": "1,735건",
+      "matched": true
+    },
+    {
+      "company": "흥국화재",
+      "expected": "353건",
+      "observed": "353건",
+      "matched": true
+    }
+  ],
+  "navigation_company_period": {
+    "before": {
+      "company": "삼성화재",
+      "period": "2026Q1"
+    },
+    "after": {
+      "company": "하나손해보험",
+      "period": "2026Q2"
+    },
+    "preserved": false
+  },
+  "out_of_scope_ui": {
+    "candidate_count": 5,
+    "first_candidate": "자동차 사고로 인한 부상을 치료하는 기간동안 휴업으로 인한 수입감소액을 보험회사가 임의로 산정한 사례",
+    "no_results_warning": false
+  },
+  "search_query_context": {
+    "before": "백내장 입원",
+    "after": "",
+    "shown_result_query": "백내장 입원"
+  },
+  "note": "오프라인 탐색 검사. 기존 30개 pytest 결과와 별도이며 검색 정확도 평가가 아님."
+}

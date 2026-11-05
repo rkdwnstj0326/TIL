@@ -1,0 +1,340 @@
+{
+  "generated_at": "2026-10-22T03:31:11.410302+00:00",
+  "stage": "Phase 0: 실제 데이터 확보·구조·검색 및 출처 검증",
+  "sources": {
+    "aggregate_documents": 2,
+    "insurers": [
+      "신한EZ손해보험",
+      "하나손해보험"
+    ],
+    "common_quarters": [
+      "2026Q1",
+      "2026Q2"
+    ],
+    "pdf_pages_extracted": 59
+  },
+  "cases": {
+    "published_documents": 70,
+    "exact_unique_bodies": 70,
+    "unique_titles": 69,
+    "unique_real_world_incidents": null,
+    "duplicate_title_groups": [
+      [
+        "fss_case_162",
+        "fss_case_71"
+      ]
+    ],
+    "service_counts_of_published_documents": {
+      "실손보험": 10,
+      "자동차보험": 20,
+      "질병·상해·간병보험": 9,
+      "손해보험": 25,
+      "생명보험": 3,
+      "보험": 3
+    },
+    "empty_fields": {
+      "facts": 0,
+      "issues": 0,
+      "resolution_text": 0,
+      "company_name": 70,
+      "decision_date": 70,
+      "consumer_argument": 70,
+      "company_argument": 70,
+      "reasoning": 70,
+      "decision": 70
+    },
+    "paragraphs": 593,
+    "important": "처리결과에 판단 근거와 처리내용이 통합되어 있다. 분리된 결정주문/주장은 추정하지 않았다."
+  },
+  "integrity": {
+    "checked_files": 78,
+    "passed": true,
+    "failed_paths": []
+  },
+  "cache_repeat": {
+    "files_checked": 78,
+    "cache_hits": 78,
+    "http_calls": 0
+  },
+  "privacy_pattern_flags": {
+    "email": [],
+    "phone": [],
+    "resident_number_like": []
+  },
+  "privacy_limit": "정규식 검사는 실명·간접 식별정보까지 없다는 보증이 아니다. 원문 공개 전 사람 검토 필요.",
+  "search_smoke": {
+    "method": "문자 2~4gram TF-IDF cosine",
+    "queries": [
+      {
+        "query": "백내장 다초점 인공수정체 수술 실손 보상",
+        "expected_ids": [
+          "fss_case_162",
+          "fss_case_71"
+        ],
+        "actual_ids": [
+          "fss_case_162",
+          "fss_case_72",
+          "fss_case_128",
+          "fss_case_158",
+          "fss_case_159"
+        ],
+        "expected_in_top5": true,
+        "all_excerpt_citations_valid": true
+      },
+      {
+        "query": "건강검진 의심소견 고지의무",
+        "expected_ids": [
+          "fss_case_62"
+        ],
+        "actual_ids": [
+          "fss_case_62",
+          "fss_case_163",
+          "fss_case_158",
+          "fss_case_66",
+          "fss_case_60"
+        ],
+        "expected_in_top5": true,
+        "all_excerpt_citations_valid": true
+      },
+      {
+        "query": "유니버셜 종신보험 해피콜 설명의무",
+        "expected_ids": [
+          "fss_case_63"
+        ],
+        "actual_ids": [
+          "fss_case_63",
+          "fss_case_60",
+          "fss_case_62",
+          "fss_case_171",
+          "fss_case_128"
+        ],
+        "expected_in_top5": true,
+        "all_excerpt_citations_valid": true
+      },
+      {
+        "query": "연금 가입설계서 예상 배당금",
+        "expected_ids": [
+          "fss_case_130"
+        ],
+        "actual_ids": [
+          "fss_case_130",
+          "fss_case_190",
+          "fss_case_170",
+          "fss_case_164",
+          "fss_case_124"
+        ],
+        "expected_in_top5": true,
+        "all_excerpt_citations_valid": true
+      },
+      {
+        "query": "청구서류 영수증 추가 진단서 제출",
+        "expected_ids": [
+          "fss_case_73"
+        ],
+        "actual_ids": [
+          "fss_case_73",
+          "fss_case_189",
+          "fss_case_163",
+          "fss_case_178",
+          "fss_case_133"
+        ],
+        "expected_in_top5": true,
+        "all_excerpt_citations_valid": true
+      }
+    ],
+    "independent_evaluation": false,
+    "semantic_embedding_tested": false
+  },
+  "statistics": {
+    "sector_observations": 28,
+    "insurer_observations": 65,
+    "checks": [
+      {
+        "check": "2024 보험=생명+손해",
+        "passed": true
+      },
+      {
+        "check": "2024 전체=은행+중소서민+보험+투자",
+        "passed": true
+      },
+      {
+        "check": "2025 보험=생명+손해",
+        "passed": true
+      },
+      {
+        "check": "2025 전체=은행+중소서민+보험+투자",
+        "passed": true
+      },
+      {
+        "check": "2025H1 보험=생명+손해",
+        "passed": true
+      },
+      {
+        "check": "2025H1 전체=은행+중소서민+보험+투자",
+        "passed": true
+      },
+      {
+        "check": "2026H1 보험=생명+손해",
+        "passed": true
+      },
+      {
+        "check": "2026H1 전체=은행+중소서민+보험+투자",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q1 접수경로 부분합",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q1 유형 부분합",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q1 상품 부분합",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q1 세 분류축의 총수 일치",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q2 접수경로 부분합",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q2 유형 부분합",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q2 상품 부분합",
+        "passed": true
+      },
+      {
+        "check": "신한EZ손해보험 2026Q2 세 분류축의 총수 일치",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2025Q4 접수경로 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2025Q4 유형 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2025Q4 상품 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2025Q4 세 분류축의 총수 일치",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q1 접수경로 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q1 유형 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q1 상품 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q1 세 분류축의 총수 일치",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q2 접수경로 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q2 유형 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q2 상품 부분합",
+        "passed": true
+      },
+      {
+        "check": "하나손해보험 2026Q2 세 분류축의 총수 일치",
+        "passed": true
+      },
+      {
+        "check": "회사 통계 관측키 유일",
+        "passed": true
+      },
+      {
+        "check": "민원건수 음수/결측 없음",
+        "passed": true
+      }
+    ],
+    "warning": "회사 분기 공시와 금감원 접수 통계는 접수범위·분모기준이 다르므로 혼합 금지"
+  },
+  "cross_source_checks": [
+    {
+      "check": "하나 PDF↔HTML 2026Q1 접수경로 자체민원",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 접수경로 대외민원",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 접수경로 합계",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 유형 보험모집",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 유형 유지관리",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 유형 보상(보험금)",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 유형 기타",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 유형 합계",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 상품 일반보험",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 상품 장기보장성보험",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 상품 장기저축성보험",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 상품 자동차보험",
+      "passed": true
+    },
+    {
+      "check": "하나 PDF↔HTML 2026Q1 상품 기타",
+      "passed": true
+    }
+  ],
+  "technical_data_gate_passed": true,
+  "public_reuse_gate_passed": false,
+  "public_reuse_reason": "금감원 원문 재배포/외부 사이트 게시 허락은 확인되지 않음. 교육·연구용 로컬 검토와 구분.",
+  "not_yet_validated": [
+    "30문항 독립 검색 정답셋",
+    "한국어 의미 임베딩·ChromaDB",
+    "실제 LLM 생성·인용 의미 일치",
+    "사람 검수한 민원유형 라벨",
+    "공개 배포/원문 재배포 조건",
+    "회사별 세부 제외 기준의 완전 일치"
+  ]
+}

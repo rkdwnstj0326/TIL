@@ -1,0 +1,54 @@
+[
+  {
+    "check": "하나 PDF↔HTML 2026Q1 접수경로 자체민원",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 접수경로 대외민원",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 접수경로 합계",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 유형 보험모집",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 유형 유지관리",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 유형 보상(보험금)",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 유형 기타",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 유형 합계",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 상품 일반보험",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 상품 장기보장성보험",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 상품 장기저축성보험",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 상품 자동차보험",
+    "passed": true
+  },
+  {
+    "check": "하나 PDF↔HTML 2026Q1 상품 기타",
+    "passed": true
+  }
+]

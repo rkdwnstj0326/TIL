@@ -1,0 +1,127 @@
+{
+  "sector_observations": 28,
+  "insurer_observations": 65,
+  "checks": [
+    {
+      "check": "2024 보험=생명+손해",
+      "passed": true
+    },
+    {
+      "check": "2024 전체=은행+중소서민+보험+투자",
+      "passed": true
+    },
+    {
+      "check": "2025 보험=생명+손해",
+      "passed": true
+    },
+    {
+      "check": "2025 전체=은행+중소서민+보험+투자",
+      "passed": true
+    },
+    {
+      "check": "2025H1 보험=생명+손해",
+      "passed": true
+    },
+    {
+      "check": "2025H1 전체=은행+중소서민+보험+투자",
+      "passed": true
+    },
+    {
+      "check": "2026H1 보험=생명+손해",
+      "passed": true
+    },
+    {
+      "check": "2026H1 전체=은행+중소서민+보험+투자",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "신한EZ손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2025Q4 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q1 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 접수경로 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 유형 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 상품 부분합",
+      "passed": true
+    },
+    {
+      "check": "하나손해보험 2026Q2 세 분류축의 총수 일치",
+      "passed": true
+    },
+    {
+      "check": "회사 통계 관측키 유일",
+      "passed": true
+    },
+    {
+      "check": "민원건수 음수/결측 없음",
+      "passed": true
+    }
+  ],
+  "warning": "회사 분기 공시와 금감원 접수 통계는 접수범위·분모기준이 다르므로 혼합 금지"
+}

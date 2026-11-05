@@ -1,0 +1,6 @@
+{
+  "url": "https://www.shinhanez.co.kr/robots.txt",
+  "status": 200,
+  "text": "#Default\r\nUser-agent: *\r\nAllow: /\r\nSitemap: https://www.shinhanez.co.kr/sitemap.xml\r\n\r\n#Google\r\nUser-agent: Googlebot\r\nAllow: /\r\n\r\n#Naver\r\nUser-agent: Yeti\r\nAllow: /\r\n\r\n#Daum\r\nUser-agent: Daumoa\r\nAllow: /\r\n\r\n#Bing\r\nUser-agent: Bingbot\r\nAllow: /\r\n\r\n#Yahoo\r\nUser-agent: Slurp\r\nAllow: /\r\n\r\n#OpenAI\r\nUser-agent: GPTBot\r\nAllow: /\r\n\r\n#Anthropic\r\nUser-agent: ClaudeBot\r\nAllow: /\r\n\r\n#Perplexity\r\nUser-agent: PerplexityBot\r\nAllow: /\r\n\r\n#Facebook\r\nUser-agent: facebookexternalhit\r\nAllow: /\r\n\r\n#Twitter/X\r\nUser-agent: Twitterbot\r\nAllow: /\r\n\r\n#LinkedIn\r\nUser-agent: LinkedInBot\r\nAllow: /",
+  "checked_at": "2026-10-22T02:57:51.631221+00:00"
+}

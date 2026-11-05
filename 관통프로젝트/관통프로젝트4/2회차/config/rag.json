@@ -1,0 +1,17 @@
+{
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_revision": "faf4aa4225822f3bc6376869cb1164e8e3feedd0",
+  "embedding_pipeline": "offset-window-mean-l2-v1",
+  "token_limit": 128,
+  "chunk_size": 700,
+  "chunk_overlap": 90,
+  "top_k": 7,
+  "fetch_k": 28,
+  "search_method": "mmr",
+  "mmr_lambda": 0.65,
+  "mode": "official-local-catalog-request-fetch-v1",
+  "gms_base_url": "https://gms.ssafy.io/gmsapi/api.openai.com/v1/",
+  "gms_model": "gpt-5.4-nano",
+  "candidate_limit": 8,
+  "selection_limit": 4
+}

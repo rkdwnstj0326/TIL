@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-10-22T06:07:44.686592+00:00",
+  "tests": 30,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 4.747,
+  "company_count": 18,
+  "statistics_checks": 204,
+  "cross_source_observations": 52,
+  "cache_repeat": {
+    "hits": 3,
+    "http_calls": 0
+  },
+  "preserved_original_files": {
+    "data/processed/insurer_stats.json": true,
+    "data/metadata/source_catalog.json": true,
+    "reports/phase0_audit.json": true
+  },
+  "desktop_browser_verification": true,
+  "browser_checks": [
+    "손해보험사 선택창 17개 옵션",
+    "삼성화재 Q2 2026 실제 수치·출처 및 상세 상품 분모 미확인 표시",
+    "생명보험 전환 → 교보생명·지급 유형·즉시연금 제외조건",
+    "자료 관리 511개 관측값·81개 파일·247/247 검사",
+    "회사별 기간·분모·원문 유형 확인표 열림",
+    "상세 분모 미확인 상품 환산건수 비교 차트 차단·원문 값 표 유지"
+  ],
+  "screenshots": [
+    {
+      "path": "reports/evidence/insurers/samsung-overview.png",
+      "bytes": 81986,
+      "sha256": "b7f3dfe0872c553612edabdd9921d8e01d8556ff0b4ab9578ca679978e17fc2f"
+    },
+    {
+      "path": "reports/evidence/insurers/kyobo-overview.png",
+      "bytes": 78241,
+      "sha256": "acdef7b181176cd48ccf6d3632ea40498004340e51be92a082646ec8dfe183c0"
+    },
+    {
+      "path": "reports/evidence/insurers/validation.png",
+      "bytes": 84917,
+      "sha256": "ce01cb2ee25495fb499b6e78340f08ed34d616ef93dc8bc43972f1100f08359b"
+    },
+    {
+      "path": "reports/evidence/insurers/unconfirmed-denominator.png",
+      "bytes": 73617,
+      "sha256": "7f97e7d1a49a7486b083f7ea03b2bec1ff2956d33aed2145f6c7615a6d1a1c44"
+    }
+  ],
+  "external_llm_calls": 0,
+  "mobile_device_verification": false
+}

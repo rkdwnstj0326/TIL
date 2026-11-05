@@ -1,0 +1,17 @@
+{
+  "theme": "FinVOC Korea",
+  "author": "서울_1반_강준서",
+  "as_of_date": "2026-10-23",
+  "companies": 21,
+  "company_quarter_items": 177,
+  "company_observations": 2303,
+  "sector_observations": 28,
+  "public_case_documents": 70,
+  "distinct_search_titles": 69,
+  "data_hashes": {
+    "data/processed/insurer_stats_all.json": "851fbbe36eb8ede921f8ddac7b7ac5b4d814d2d106438b6226e23bf4d0bc7870",
+    "data/processed/insurer_stats_history.json": "38c4655281068f4c6b5a39af1c31b3ce0960387386675cf1ee20c1fde27e0a7c",
+    "data/processed/sector_stats.json": "3881f89cdc6be79f9f8931347acc544cfb9be6687d6639cd716e3db413ab0ed1",
+    "data/private/cases.json": "3f79299db3379b7d2915095dcccc6014fe4062f5fc8446b54e102767811b18c5"
+  }
+}

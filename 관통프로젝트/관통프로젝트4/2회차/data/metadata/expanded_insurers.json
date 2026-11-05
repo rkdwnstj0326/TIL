@@ -1,0 +1,60 @@
+[
+  {
+    "source_id": "kb_2026q2",
+    "company": "KB손해보험",
+    "sector": "손해보험",
+    "source_page": "https://www.kbinsure.co.kr/CG615040002.ec?jsp=error.jsp",
+    "document": {
+      "url": "https://www.kbinsure.co.kr/CG615040002.ec?jsp=error.jsp",
+      "final_url": "https://www.kbinsure.co.kr/CG615040002.ec?jsp=error.jsp",
+      "local_path": "data/raw/86ff08a0911d8b3d618b946d66273683c1e89b9db6f442c85ddb007d97edc335.html",
+      "sha256": "8842c603d2317dbbb686681f12492fd09f52689cf76a94707a9a8dae32ec3210",
+      "bytes": 1747,
+      "retrieved_at": "2026-10-22T05:49:01.826673+00:00",
+      "content_type": "text/html; charset=euc-kr",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    },
+    "adopted": false,
+    "note": "직접 원문은 보안세션 오류 HTML. 협회 공개 표를 별도 채택"
+  },
+  {
+    "source_id": "kyobo_2026q2",
+    "company": "교보생명",
+    "sector": "생명보험",
+    "source_page": "https://www.kyobo.com/dgt/web/customer/customer-proposal/cval-prcn",
+    "document": {
+      "url": "https://www.kyobo.com/dgt/web/customer/customer-proposal/cval-prcn",
+      "final_url": "https://www.kyobo.com/dgt/web/customer/customer-proposal/cval-prcn",
+      "local_path": "data/raw/b4e65727b25e533e90058ecace0034d22f8e6bda532186f36d296a37f19382ca.html",
+      "sha256": "3d6a4cd8761860741b0fdd188093720b4887786a388a2896428767c3dbcc2886",
+      "bytes": 108114,
+      "retrieved_at": "2026-10-22T05:49:03.012682+00:00",
+      "content_type": "text/html;charset=UTF-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    },
+    "adopted": true,
+    "note": "insurer_sources.json에 정식 채택"
+  },
+  {
+    "source_id": "nhlife_2026q3_discovery",
+    "company": "NH농협생명",
+    "sector": "생명보험",
+    "source_page": "https://www.nhlife.co.kr/ho/oc/HOOC0011M00.nhl",
+    "document": {
+      "url": "https://www.nhlife.co.kr/ho/oc/HOOC0011M00.nhl",
+      "final_url": "https://www.nhlife.co.kr/ho/oc/HOOC0011M00.nhl",
+      "local_path": "data/raw/ea418f2311d18f4d944dd843dfa7ce93c34bb9092ec290a30e8413c807e984ff.html",
+      "sha256": "a41d628c4d452b0a0927aa1a82668790a6a799285bb05a6d62619d53f07df929",
+      "bytes": 99212,
+      "retrieved_at": "2026-10-22T05:49:04.419333+00:00",
+      "content_type": "text/html; charset=UTF-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    },
+    "adopted": false,
+    "actual_periods": [
+      "2026Q2",
+      "2026Q3"
+    ],
+    "note": "이번 2026Q1/Q2 통합 파일에 포함하지 않음"
+  }
+]

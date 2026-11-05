@@ -1,0 +1,24 @@
+{
+  "project": "FinVOC Korea",
+  "author": "서울_1반_강준서",
+  "as_of_date": "2026-10-23",
+  "rag_implemented": true,
+  "actual_gms_connection_verified": true,
+  "actual_rag_questions": 7,
+  "automated_tests": {
+    "tests": 46,
+    "failures": 0,
+    "errors": 0
+  },
+  "domain_item_count": 177,
+  "approx_100_item_requirement_satisfied": true,
+  "mandatory_features_complete": false,
+  "ready_for_final_submission": false,
+  "human_evaluations_received": false,
+  "remaining": [
+    "공식 셀프·상호 평가 미반영",
+    "독립 검색 정답셋·생성 답변 전문가 평가 미완료"
+  ],
+  "uploaded": false,
+  "additional_historical_rag_questions": 2
+}

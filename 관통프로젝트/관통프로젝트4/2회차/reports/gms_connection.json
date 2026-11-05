@@ -1,0 +1,10 @@
+{
+  "key_configured": true,
+  "actual_call": true,
+  "connected": true,
+  "calls": 1,
+  "seconds": [
+    1.514
+  ],
+  "model": "gpt-5.4-nano"
+}

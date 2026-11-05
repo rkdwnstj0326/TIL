@@ -1,0 +1,99 @@
+{
+  "project": "FinVOC Korea",
+  "started_at": "2026-10-23T11:36:39.6957332+09:00",
+  "repository": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt",
+  "operation": "SendToRecycleBin",
+  "retained_submission": "2회차\\제출준비_20261023_FinVOC_새규칙_강준서",
+  "archive_sha256_before": "10ff962932f12662c41b06e2921e80283d7c59e7a6960ef3cfa923ca66499f1f",
+  "targets": [
+    {
+      "relative_path": "2회차\\_local_backups",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\_local_backups",
+      "is_directory": true,
+      "files": 63,
+      "bytes": 340239,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\_reference_extracted",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\_reference_extracted",
+      "is_directory": true,
+      "files": 3742,
+      "bytes": 58023618,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\제출준비_20261022_강준서",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\제출준비_20261022_강준서",
+      "is_directory": true,
+      "files": 3,
+      "bytes": 6543802,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\제출준비_20261023_FinVOC_강준서",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\제출준비_20261023_FinVOC_강준서",
+      "is_directory": true,
+      "files": 87,
+      "bytes": 1058421,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\finance_prototype",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\finance_prototype",
+      "is_directory": true,
+      "files": 62,
+      "bytes": 261480483,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\review_insight",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\review_insight",
+      "is_directory": true,
+      "files": 38840,
+      "bytes": 1439707469,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\교육생배포용.zip",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\교육생배포용.zip",
+      "is_directory": false,
+      "files": 1,
+      "bytes": 25675,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\영화도메인_데이터_배포용.zip",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\영화도메인_데이터_배포용.zip",
+      "is_directory": false,
+      "files": 1,
+      "bytes": 23860068,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "2회차\\WORKSPACE_README.md",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\2회차\\WORKSPACE_README.md",
+      "is_directory": false,
+      "files": 1,
+      "bytes": 624,
+      "status": "recycled"
+    },
+    {
+      "relative_path": "3회차",
+      "absolute_path": "C:\\Users\\SSAFY\\Desktop\\ai_core_pjt\\3회차",
+      "is_directory": true,
+      "files": 1,
+      "bytes": 0,
+      "status": "recycled"
+    }
+  ],
+  "status": "completed",
+  "uploaded": false,
+  "archive_sha256_after": "10ff962932f12662c41b06e2921e80283d7c59e7a6960ef3cfa923ca66499f1f",
+  "archive_unchanged": true,
+  "requirements_pdf_unchanged": true,
+  "source_files_checked": 90,
+  "source_files_changed": 0,
+  "completed_at": "2026-10-23T11:39:01.8908572+09:00",
+  "retry_note": "Older FinVOC package: whole-directory recycle initially failed; each immediate child and then its empty parent were successfully sent to Recycle Bin."
+}

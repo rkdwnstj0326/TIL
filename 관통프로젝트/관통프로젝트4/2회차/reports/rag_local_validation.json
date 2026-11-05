@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-10-23T03:01:52.922988+00:00",
+  "real_local_model": true,
+  "gms_calls": 0,
+  "checks": {
+    "actual_dimension_384": true,
+    "actual_token_limit_128": true,
+    "every_window_within_limit": true,
+    "all_korean_characters_covered": true,
+    "last_korean_sentence_covered": true,
+    "reindex_count_stable": true,
+    "shared_doc_ids_disjoint": true,
+    "other_item_not_mixed": true,
+    "selected_metadata_first": true,
+    "repeat_source_http_zero": true,
+    "repeat_body_identical": true,
+    "top_k_applied": true,
+    "config_uses_new_collections": true,
+    "new_chunks_actually_indexed": true
+  },
+  "passed": true,
+  "source_http_calls": 0,
+  "cache_hits": 2,
+  "long_text_windows": 26,
+  "max_window_tokens": 125,
+  "original_doc_chunks": 5,
+  "alternate_chunks": 5,
+  "similarity_ids": [
+    "insurer_2d540d393e65_2026Q2",
+    "insurer_2d540d393e65_2026Q2:fss_case_73:0",
+    "insurer_2d540d393e65_2026Q2:fss_case_73:1",
+    "insurer_2d540d393e65_2026Q2:fss_case_73:3"
+  ],
+  "mmr_ids": [
+    "insurer_2d540d393e65_2026Q2",
+    "insurer_2d540d393e65_2026Q2:fss_case_73:0",
+    "insurer_2d540d393e65_2026Q2:fss_case_73:3",
+    "insurer_2d540d393e65_2026Q2:fss_case_73:1"
+  ],
+  "ordering_differs": true
+}

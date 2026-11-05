@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-10-22T05:03:00.634648+00:00",
+  "tests": 23,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 2.418,
+  "protected_data_files": 98,
+  "changed_protected_files": [],
+  "external_gms_calls": 0,
+  "desktop_browser_verification": true,
+  "mobile_device_verification": false,
+  "browser_checks": [
+    "업무 개요 카드·차트·공식 출처 링크 표시",
+    "주요 유형 카드→실제 검색 결과 이동",
+    "청구 서류 예시→fss_case_73 원문 상세",
+    "없는 검색어→후보 0개와 안내",
+    "자료 관리 출처 카드 표시",
+    "민원 분석 필터·차트 표시"
+  ],
+  "screenshots": [
+    {
+      "path": "reports/evidence/design/after-overview.png",
+      "width": 1268,
+      "height": 976
+    },
+    {
+      "path": "reports/evidence/design/after-cases.png",
+      "width": 1268,
+      "height": 976
+    },
+    {
+      "path": "reports/evidence/design/after-analysis.png",
+      "width": 1268,
+      "height": 976
+    }
+  ],
+  "screenshot_distribution": "로컬 보관; 원문 화면은 소스 ZIP 제외"
+}

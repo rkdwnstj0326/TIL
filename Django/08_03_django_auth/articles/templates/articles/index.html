@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>메인 페이지</h1>
+  {% if request.user.is_authenticated %}
+    <h3>Hello, {{ user.username }}</h3>
+    <a href="{% url "articles:create" %}">[CREATE]</a>
+    <a href="{% url "accounts:update" %}">[회원정보수정]</a>
+    <form action="{% url "accounts:logout" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="LOGOUT">
+    </form>
+    <form action="{% url "accounts:delete" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="DELETE">
+    </form>
+  {% else %}
+    <a href="{% url "accounts:login" %}">[LOGIN]</a>
+    <a href="{% url "accounts:signup" %}">[SIGNUP]</a>
+  {% endif %}
+
+
+  {% for article in articles %}
+    <article>
+      <h3>
+        <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+      </h3>
+      <p>글 번호: {{ article.pk }}</p>
+      <p>{{ article.content }}</p>
+    </article>
+    <hr>
+  {% endfor %}
+</body>
+</html>

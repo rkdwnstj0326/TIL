@@ -1,0 +1,120 @@
+[
+  {
+    "source_id": "kdi_287509",
+    "publisher": "금융감독원",
+    "official_mirror": "KDI 경제교육·정보센터",
+    "source_page": "https://eiec.kdi.re.kr/policy/materialView.do?num=287509",
+    "filename_label": "D26090179.pdf",
+    "document": {
+      "url": "https://eiec.kdi.re.kr/policy/callDownload.do?num=287509&filenum=1&dtime=20261022115747",
+      "final_url": "https://eiec.kdi.re.kr/policy/callDownload.do?num=287509&filenum=1&dtime=20261022115747",
+      "local_path": "data/raw/14d85d18f7c2e7a81e72d2dcec126e33a90a55d40b2330163ec240660b058432.pdf",
+      "sha256": "39f38ec258c12aafadef5540a69a5ea1e72df6fff1fb0d9b732389b431d9d9df",
+      "bytes": 776291,
+      "retrieved_at": "2026-10-22T02:57:48.311757+00:00",
+      "content_type": null,
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "kdi_279797",
+    "publisher": "금융감독원",
+    "official_mirror": "KDI 경제교육·정보센터",
+    "source_page": "https://eiec.kdi.re.kr/policy/materialView.do?num=279797",
+    "filename_label": "D2604208.pdf",
+    "document": {
+      "url": "https://eiec.kdi.re.kr/policy/callDownload.do?num=279797&filenum=1&dtime=20261022115749",
+      "final_url": "https://eiec.kdi.re.kr/policy/callDownload.do?num=279797&filenum=1&dtime=20261022115749",
+      "local_path": "data/raw/e5a1274a2e6a794897d16b533df4478204606ac91bd24af5ce09dcf7d9bdd704.pdf",
+      "sha256": "feb294eb38bca672f823b5667efe06c1a2996f09bf722ff35e0f35bd4d04f97a",
+      "bytes": 777737,
+      "retrieved_at": "2026-10-22T02:57:50.342128+00:00",
+      "content_type": null,
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "hana_2026q1",
+    "source_page": "https://www.hanainsure.co.kr/download/26ebb71969",
+    "document": {
+      "url": "https://www.hanainsure.co.kr/download/26ebb71969",
+      "final_url": "https://www.hanainsure.co.kr/download/26ebb71969",
+      "local_path": "data/raw/6c1eff8a6d7fdf76b9760d5a7fd7c99e34d620d153437792bf71339003c054d3.pdf",
+      "sha256": "b258605786b6abfea415bb63bf72bc11ff55a58bccdd1b37a11117f16c352495",
+      "bytes": 796438,
+      "retrieved_at": "2026-10-22T02:57:51.464130+00:00",
+      "content_type": "application/pdf;charset=utf-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "hana_disclosures",
+    "source_page": "https://www.hanainsure.co.kr/w/consumer/finaneConsumer/complainDisclosures",
+    "document": {
+      "url": "https://www.hanainsure.co.kr/w/consumer/finaneConsumer/complainDisclosures",
+      "final_url": "https://www.hanainsure.co.kr/w/consumer/finaneConsumer/complainDisclosures",
+      "local_path": "data/raw/e7bf7b4ba03834a42cf0ba4354c679264faaec6bbc5d49e32a44a92ee6f44487.html",
+      "sha256": "1340e735ef8ea15ebfbcd5f1cb1049f2cd8dd0e91030a823f7200b94faae5b4e",
+      "bytes": 457310,
+      "retrieved_at": "2026-10-22T03:12:28.530661+00:00",
+      "content_type": "text/html;charset=UTF-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "shinhanez_2026q2",
+    "source_page": "https://www.shinhanez.co.kr/static/cpo/CPO600M0154.html",
+    "document": {
+      "url": "https://www.shinhanez.co.kr/static/cpo/CPO600M0154.html",
+      "final_url": "https://www.shinhanez.co.kr/static/cpo/CPO600M0154.html",
+      "local_path": "data/raw/ac75f890a34f64a3eca5060a5ae47e4ce69210ae99b31af4f71a26a16f5bf26f.html",
+      "sha256": "9942275d1663e08e0daa3708b4f210bac2dfc9b37a29fc12f1f1f3cb606a51c0",
+      "bytes": 16783,
+      "retrieved_at": "2026-10-22T02:57:52.488393+00:00",
+      "content_type": "text/html",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "fss_copyright",
+    "source_page": "https://www.fss.or.kr/fss/main/contents.do?menuNo=200701",
+    "document": {
+      "url": "https://www.fss.or.kr/fss/main/contents.do?menuNo=200701",
+      "final_url": "https://www.fss.or.kr/fss/main/contents.do?menuNo=200701",
+      "local_path": "data/raw/48942f7dba1565706739f7e9df932a8096d54202266d2dfed73e6cd295780964.html",
+      "sha256": "678f2b23f0acc02ffd8b2ffa71970a340c41da101398249cf0be8427215e3d7f",
+      "bytes": 648761,
+      "retrieved_at": "2026-10-22T02:57:53.725939+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "fss_case_list",
+    "source_page": "https://www.fss.or.kr/fss/job/fncCnflCase/list.do?menuNo=201195",
+    "document": {
+      "url": "https://www.fss.or.kr/fss/job/fncCnflCase/list.do?menuNo=201195",
+      "final_url": "https://www.fss.or.kr/fss/job/fncCnflCase/list.do?menuNo=201195",
+      "local_path": "data/raw/f6dd50efd307cc36836cf8b785083ffbde5da4517d9bcc6962635d2bd0c577a9.html",
+      "sha256": "e0243bd0b32be1bf7a4015d851f723f7fee9460b5e737e3211766e1a736d95b3",
+      "bytes": 673730,
+      "retrieved_at": "2026-10-22T02:57:54.760604+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  },
+  {
+    "source_id": "fss_decision_list",
+    "source_page": "https://www.fss.or.kr/fss/bbs/B0000390/list.do?menuNo=201193",
+    "document": {
+      "url": "https://www.fss.or.kr/fss/bbs/B0000390/list.do?menuNo=201193",
+      "final_url": "https://www.fss.or.kr/fss/bbs/B0000390/list.do?menuNo=201193",
+      "local_path": "data/raw/1cca92f09005b98593df6855b20011ed6933574f7a2cba74a49d8f661a10dc1a.html",
+      "sha256": "0215068a5a94ab52ef0a28df3674d6b184b10057bf8e3f730567e847350094a3",
+      "bytes": 686070,
+      "retrieved_at": "2026-10-22T02:57:55.746160+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "reuse_permission": "별도 출처 정책 및 자료별 이용조건 검토 기록 참조"
+    }
+  }
+]

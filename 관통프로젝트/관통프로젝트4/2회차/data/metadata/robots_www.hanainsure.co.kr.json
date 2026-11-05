@@ -1,0 +1,6 @@
+{
+  "url": "https://www.hanainsure.co.kr/robots.txt",
+  "status": 200,
+  "text": "User-agent: *\nDisallow: /honeQ/product/cybercrimereward/honeQCyberCrimeRewardIntro\nDisallow: /p/intro/travlog\nAllow: /\n",
+  "checked_at": "2026-10-22T02:57:50.526311+00:00"
+}
