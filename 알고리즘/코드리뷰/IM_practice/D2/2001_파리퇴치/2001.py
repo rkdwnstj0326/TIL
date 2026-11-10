@@ -7,6 +7,8 @@
 # 3. 파리채 안의 행을 탐색한다.
 # 4. 파리채 안의 열을 탐색한다.
 
+# N : 배열크기 / M : 파리채의 크기
+
 import sys
 sys.stdin = open("input.txt")
 
@@ -23,14 +25,14 @@ for tc in range(1, T + 1):
     # 첫 번째:     ■  ■  ■  □  □
     # 두 번째:     □  ■  ■  ■  □
     # 세 번째:     □  □  ■  ■  ■
-    # 그래서  N - M + 1이 나옴
+    # 그래서  N - M + 1이 나옴 -> 이건 파리채를 둘 수 있는 위치르 ㄹ뜻함
     max_total = 0
 
     for r in range(N - M + 1):
         for c in range(N - M + 1):
             total = 0 
             # total은 지금 파리채를 내려친 위치에서 잡은 파리의 수
-            # total = 0을 여기 두는 이유는 파리채를 새로운 위치에 좋을 때 마다 초기화 하려고
+            # total = 0을 여기 두는 이유는 파리채를 새로운 위치에 놓을 때 마다 초기화 하려고
 
             for i in range(r, r + M): # i는 파리채 안에서 탐색하는 행
                 for j in range(c, c + M): # j는 파리채 안에서 탐색하는 열
