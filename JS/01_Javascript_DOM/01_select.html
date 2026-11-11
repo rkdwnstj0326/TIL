@@ -1,0 +1,45 @@
+<!-- select.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="heading">DOM 선택</h1>
+  <a href="https://www.google.com/">google</a>
+  <p class="content">content1</p>
+  <p class="content">content2</p>
+  <p class="content">content3</p>
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+  </ul>
+  <script>
+    // 1. querySelector(selector)
+    // - CSS 선택자와 일치하는 "첫 번째" 요소 하나를 반환 (없으면 null)
+    // [실습 포인트/힌트] CSS와 똑같이 클래스는 점(.)을 붙여 '.heading'처럼 작성
+    // TODO: class가 heading인 요소를 선택해 console.log로 출력하세요.
+    // 결과: <h1 class="heading">
+
+    // TODO: class가 content인 요소를 querySelector로 선택해 출력하세요.
+    // 결과: 첫 번째 <p> (content1)만 선택됨 -> content가 3개인데 왜 하나만 나오는지 생각해 보기
+
+
+    // 2. querySelectorAll(selector)
+    // - CSS 선택자와 일치하는 "모든" 요소를 NodeList로 반환
+    // - NodeList는 배열과 비슷하지만 배열은 아님 (forEach는 가능, map/filter는 불가능)
+    // TODO: class가 content인 요소를 모두 선택해 출력하세요.
+    // 결과: NodeList(3)
+
+    // [실습 포인트/힌트] CSS의 자식 선택자(>)도 그대로 사용 가능
+    // TODO: ul의 자식인 li를 모두 선택해 출력하세요.
+    // 결과: NodeList(2)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!-- element_manipulation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red {
+      color: crimson;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">DOM 조작</h1>
+  <a href="https://www.google.com/">google</a>
+  <p class="content">content1</p>
+  <p class="content">content2</p>
+  <p class="content">content3</p>
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+  </ul>
+
+  <script>
+    // 1. 클래스 속성 조작 (classList)
+    // - classList: 요소의 클래스 목록 (DOMTokenList)
+    // - add / remove / toggle 로 클래스를 추가, 제거, 전환
+    // - 한 줄 작성할 때마다 저장 후 새로고침해서 h1의 색과 classList 변화를 확인합니다.
+    const h1Tag = document.querySelector('.heading')
+    console.log(h1Tag.classList) // DOMTokenList ['heading']
+
+    // [실습 포인트/힌트] .red 클래스는 <style>에 미리 만들어 두었음 (글자색 crimson)
+    // [실습 포인트/힌트] 클래스 이름에는 점(.)을 붙이지 않음 -> 'red'
+    // TODO: h1Tag에 red 클래스를 추가하고 classList를 출력하세요.
+
+    // TODO: h1Tag에서 red 클래스를 제거하고 classList를 출력하세요.
+
+    // TODO: h1Tag에 red 클래스를 toggle하고 classList를 출력하세요. (있으면 제거, 없으면 추가)
+
+
+    // 2. 일반 속성 조작
+    // - getAttribute(이름): 속성 값 조회
+    // - setAttribute(이름, 값): 속성 값 설정 (없으면 새로 추가, 있으면 덮어씀)
+    // - removeAttribute(이름): 속성 제거
+    const aTag = document.querySelector('a')
+
+    // TODO: aTag의 href 속성 값을 조회해 출력하세요.
+    // 결과: https://www.google.com/
+
+    // TODO: aTag의 href를 'https://www.naver.com/'으로 바꾸고, 다시 조회해 출력하세요.
+    // 결과: https://www.naver.com/ (화면의 링크를 눌러서도 확인)
+
+    // TODO: aTag의 href 속성을 제거하고, 다시 조회해 출력하세요.
+    // 결과: null (속성이 사라짐)
+  </script>
+</body>
+
+</html>

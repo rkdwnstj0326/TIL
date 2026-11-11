@@ -1,0 +1,45 @@
+<!-- js_variable.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // ※ 1~3번은 같은 이름(number, x)을 사용하므로, 한 번에 하나씩 주석을 풀어 실행합니다.
+
+    // 1. let 키워드
+    // - 재할당 가능, 재선언 불가능, 블록 스코프
+    // let number = 10  // 1.1 선언 및 초기값 할당
+    // number = 20  // 1.2 재할당
+    // console.log(number) // 파이썬의 print()역할
+    // let number = 20 // 1.3 재선언 불가능 (SyntaxError: Identifier 'number' has already been declared)
+
+
+    // 2. const 키워드
+    // - 재할당 불가능, 재선언 불가능, 블록 스코프
+    // - 선언과 동시에 반드시 값을 넣어야 함
+    // const number = 10 // 2.1 선언 및 초기값 할당
+    // number = 10 // TypeError: Assignment to constant variable. (같은 값이어도 재할당 불가능)
+    // const number = 20 // 2.2 재선언 불가능
+    // const number // SyntaxError: Missing initializer in const declaration
+
+    // 3. block scope
+    // - 중괄호({}) 안에서 let, const로 선언한 변수는 중괄호 밖에서 보이지 않음
+    // let x = 1
+    // if (x === 1) {
+    //     let x = 2
+    //     console.log(x) // 2 (블록 안의 x)
+    // }
+    // console.log(x) // 1 (블록 밖의 x)
+
+    // => 기본은 const, 재할당이 꼭 필요할 때만 let
+  </script>
+</body>
+
+</html>
