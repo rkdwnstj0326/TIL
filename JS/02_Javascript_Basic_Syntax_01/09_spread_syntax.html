@@ -1,0 +1,39 @@
+<!-- spread_syntax.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 전개 구문(...)
+    // - 배열처럼 반복 가능한 값을 "하나씩 펼치거나", 여러 값을 "하나로 모음"
+
+    // 1. 함수 호출 시 인자 확장 (펼치기)
+    function myFunc(x, y, z) {
+      return x + y + z
+    }
+
+    let numbers = [1, 2, 3]
+
+    // [실습 포인트/힌트] 먼저 console.log(myFunc(numbers))처럼 배열을 그대로 넘기면 어떤 결과가 나오는지 확인
+    // TODO: numbers를 펼쳐서 myFunc에 전달하고 결과를 출력하세요.
+    // 결과: 6 (myFunc(1, 2, 3)과 같음)
+
+    // 2. 나머지 매개변수의 압축 용도로 활용 (모으기)
+    function myFunc2(x, y, ...restArgs) {
+      return [x, y, restArgs]
+    }
+    console.log(myFunc2(1, 2, 3, 4, 5)) // [1, 2, [3, 4, 5]]
+    console.log(myFunc2(1, 2)) // [1, 2, []]
+
+    // => 같은 ... 이지만, 함수를 "호출"할 때는 펼치고, 함수를 "정의"할 때는 모음
+  </script>
+</body>
+
+</html>

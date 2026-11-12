@@ -1,0 +1,65 @@
+<!-- primitive_types.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. Number
+    // - 정수와 실수를 구분하지 않고 하나의 타입으로 처리
+    const a = 13
+    const b = -5
+    const c = 3.14
+    const d = 2.998e8 // 2.998 * 10^8 = 299,800,000
+    const e = Infinity
+    const f = -Infinity
+    const g = NaN // Not a Number를 나타내는 값 (typeof는 'number')
+
+    const k = 13.0
+    // console.log(a == k)  // true
+    // console.log(a === k)  // true (13과 13.0은 같은 숫자)
+    // console.log(0.1 + 0.2)  // 0.30000000000000004 (실수 계산 오차, Python도 동일)
+
+    // 2. String
+    const firstName = 'Tony'
+    const lastName = 'Stark'
+    // [실습 포인트/힌트] + 로 문자열 결합 가능 (빼기, 곱하기, 나누기는 불가능)
+    // TODO: firstName과 lastName을 + 로 이어 붙여 fullName에 저장하고 출력하세요.
+    // 결과: TonyStark
+
+    // 3. 템플릿 리터럴(Template literals)
+    // - 백틱(`)으로 감싸고, ${} 안에 변수나 표현식을 바로 넣을 수 있음
+    const age = 100
+    // [실습 포인트/힌트] 작은따옴표(')가 아니라 백틱(`, 키보드 숫자 1 왼쪽 키)으로 감싸야 ${}가 동작함
+    // TODO: 템플릿 리터럴로 '홍길동은 100세입니다.' 문장을 만들어 message에 저장하고 출력하세요. (100은 age 변수 사용)
+    // 결과: 홍길동은 100세입니다.
+
+    // 4. null(값이 없음을 의도적으로 나타냄)
+    let x = null
+    console.log(x) // null
+    console.log(typeof x)  // object (초기 버전의 버그가 하위 호환 때문에 남은 것)
+    console.log(10 + x)  // 10 (산술 연산에서 null은 0으로 취급)
+
+    // 5. undefined(값이 할당되지 않은 상태)
+    let y
+    console.log(y)  // undefined
+    console.log(typeof y)  // undefined
+    console.log(10 + y)  // NaN (계산할 수 없는 값)
+
+    // 6. boolean(true, false)
+    let m = true
+    let n = false
+    console.log(typeof m)  // boolean
+    console.log(10 > 5)  // true
+    console.log(10 < 5)  // false
+    
+  </script>
+</body>
+
+</html>

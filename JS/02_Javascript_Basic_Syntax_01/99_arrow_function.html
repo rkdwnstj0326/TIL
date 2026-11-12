@@ -1,0 +1,35 @@
+<!-- arrow_function.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 화살표 함수 심화
+
+    // 1. 인자가 없다면 () 로 표시 가능
+    const noArgs1 = () => 'No args'
+
+    // 2. 관례상 쓰지 않는 매개변수를 _로 표시하기도 함 (`_`는 이름이 `_`인 매개변수 1개)
+    const noArgs2 = _ => 'No args'
+
+    // 3-1. object를 return 한다면 return 을 명시적으로 작성해야 함
+    const returnObject1 = () => { return { key: 'value' } }
+
+    // 3-2. return을 작성하지 않으려면 객체를 소괄호로 감싸야 함
+    // - 소괄호가 없으면 { }를 객체가 아니라 함수 본문(블록)으로 해석함
+    const returnObject2 = () => ({ key: 'value' })
+
+    console.log(noArgs1()) // No args
+    console.log(returnObject1()) // { key: 'value' }
+    console.log(returnObject2()) // { key: 'value' }
+  </script>
+</body>
+
+</html>

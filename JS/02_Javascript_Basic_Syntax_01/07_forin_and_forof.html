@@ -1,0 +1,65 @@
+<!-- forin_and_forof.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. for...in
+    // - 주석을 풀어 실행해 보고, 배열에서는 인덱스(키)가 나오는 것을 확인
+
+    // Array
+    // const arr1 = ['a', 'b', 'c']
+
+    // for (const elem in arr1) {
+    //   console.log(elem) // 0 1 2
+    // }
+
+    // // Object
+    // const capitals1 = {
+    //   korea: '서울',
+    //   japan: '도쿄',
+    //   china: '베이징'
+    // }
+
+    // for (const capital in capitals1) {
+    //   console.log(capital) // korea japan china
+    // }
+
+
+
+    //////////////////////////////////////////////////////////////////////
+
+
+
+    // 2. for...of
+    // - 배열은 반복 가능(iterable)하지만, 일반 객체는 반복 가능하지 않음
+
+    // Array
+    const arr2 = ['a', 'b', 'c']
+
+    for (const elem of arr2) {
+      console.log(elem) // a b c
+    }
+
+    // Object
+    const capitals2 = {
+      korea: '서울',
+      japan: '도쿄',
+      china: '베이징'
+    }
+
+    // 일부러 에러를 확인하는 코드 (객체를 for...of로 순회할 수 없음)
+    for (const capital of capitals2) {
+      console.log(capital) // TypeError: capitals2 is not iterable
+    }
+  </script>
+</body>
+
+</html>

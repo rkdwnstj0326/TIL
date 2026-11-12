@@ -1,0 +1,52 @@
+<!-- data_types.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 원시 자료형 (Number, String, Boolean, null, undefined 등)
+    // - 변수에 "값 자체"가 저장됨
+    // - 다른 변수에 할당하면 값이 복사되므로, 서로 영향을 주지 않음
+    const a = 'bar'
+    console.log(a) // bar
+
+    console.log(a.toUpperCase()) // BAR (새 문자열을 반환할 뿐)
+    console.log(a) // bar (원본은 그대로 = 불변)
+
+    let b = 10
+    let c = b // 값 10이 복사됨
+    c = 20
+    console.log(b) // 10
+    console.log(c) // 20
+
+
+    // 2. 참조 자료형 (Object, Array, Function)
+    // - 변수에 데이터가 저장된 "메모리 주소"가 저장됨
+    // - 다른 변수에 할당하면 주소가 복사되므로, 한쪽을 바꾸면 다른 쪽도 바뀜
+    const arr1 = [1, 2, 3]
+    const arr2 = arr1 // 같은 배열을 가리킴
+    arr2.push(4)
+
+    console.log(arr1) // [1, 2, 3, 4]
+    console.log(arr2) // [1, 2, 3, 4]
+
+    const obj1 = { name: 'Alice', age: 30 }
+    const obj2 = obj1
+
+    obj2.age = 40
+
+    console.log(obj1.age) // 40
+    console.log(obj2.age) // 40
+
+    // => const로 선언한 배열, 객체도 "내용"은 바꿀 수 있음 (주소를 바꾸는 재할당만 불가능)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!-- loops_and_iteration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. while
+    // - 조건이 참인 동안 반복
+    let i = 0
+
+    // [실습 포인트/힌트] 반복할 때마다 i를 1씩 늘리지 않으면 무한 반복에 빠짐 (브라우저 탭이 멈추면 탭을 닫기)
+    // TODO: while로 i가 6보다 작은 동안 i를 출력하고 1씩 증가시키세요.
+    // 결과: 0 ~ 5
+
+
+    // 2. for
+    // - for ([초기문]; [조건문]; [증감문]) / 매번 i를 재할당하므로 let 사용 (const 불가)
+    // TODO: for 문으로 0부터 5까지 출력하세요.
+    // 결과: 0 ~ 5
+
+    // for의 i는 블록 스코프라 반복문 밖에서는 보이지 않음
+    // -> 여기서 출력되는 i는 1번 while에서 선언한 바깥 i
+    // -> 1번 코드를 지우고 실행하면 ReferenceError: i is not defined
+    // 1, 2번을 작성한 뒤 아래 주석을 풀어 확인
+    // console.log(i)  // 6
+
+
+    // 3. for...in
+    // - 객체의 "키(key)"를 하나씩 꺼냄
+    const fruits = {
+      a: 'apple',
+      b: 'banana'
+    }
+
+    // [실습 포인트/힌트] for (const 변수 in 객체) - 꺼낸 키로 값을 조회할 때는 fruits[키] (대괄호)
+    // TODO: for...in으로 fruits의 키와, 그 키로 조회한 값을 출력하세요.
+    // 결과: a, apple, b, banana
+
+
+    // 4. for...of
+    // - 반복 가능한(iterable) 객체(배열, 문자열 등)의 "값(value)"을 하나씩 꺼냄
+    // - 매 반복마다 새 변수가 만들어지므로 const 사용 가능
+    const numbers = [0, 1, 2, 3]
+    // TODO: for...of로 numbers의 값을 하나씩 출력하세요.
+    // 결과: 0, 1, 2, 3
+
+    const myStr = 'apple'
+
+    // TODO: for...of로 myStr의 글자를 하나씩 출력하세요.
+    // 결과: a, p, p, l, e
+
+
+    // 5. for...in 과 for...of 의 차이
+    const arr = ['a', 'b', 'c']
+
+    // TODO: 같은 arr를 for...in과 for...of로 각각 순회하며 출력하고, 두 결과를 비교하세요.
+    // 결과: for...in은 0, 1, 2 (인덱스, 그것도 '문자열') / for...of는 a, b, c (값)
+
+    // => 배열은 for...of, 객체는 for...in
+  </script>
+</body>
+
+</html>
