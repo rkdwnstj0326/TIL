@@ -8,7 +8,7 @@ for tc in range(1, T + 1):
     for k in range(N - 2):
         if A[k] == A[k + 2]:
         # if A[k] - A[k + 1] == -1 * (A[k + 1] - A[k + 2]):
-            count += 1
+            count += 1 # 연속한 상하수열
             max_v = max(count, max_v)
         else:
             count = 0
