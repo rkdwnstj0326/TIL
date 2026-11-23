@@ -1,0 +1,100 @@
+<!-- lodash.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <input type="text" id="searchInput" placeholder="검색어 난타해보기">
+</head>
+
+<body>
+  <script>
+    // lodash: 배열, 객체 등을 다룰 때 자주 쓰는 기능을 모아 둔 유틸리티 라이브러리 (_ 로 사용)
+    // ※ 검색 입력창(#searchInput)에 글자를 입력하거나 마우스를 움직이며 5, 6번 결과를 확인
+
+    // 1. _.uniqBy: 객체 배열에서의 특정 키를 기준으로 중복 제거
+    const users = [
+      { id: 1, name: '철수' },
+      { id: 2, name: '영희' },
+      { id: 1, name: '철수' },
+    ]
+
+    // 먼저 나온 Key 값이 생존
+    const uniqueUsersLodash = _.uniqBy(users, 'id')
+    console.log(uniqueUsersLodash)  // [{ id: 1, name: '철수' }, { id: 2, name: '영희' }]
+
+    // 2. _.orderBy: 다중 조건 정렬
+    // - age 내림차순, age가 같으면 user 오름차순
+    const posts = [
+      { user: 'A', age: 20 },
+      { user: 'B', age: 30 },
+      { user: 'C', age: 20 },
+    ]
+
+    const sorted = _.orderBy(posts, ['age', 'user'], ['desc', 'asc'])
+    console.log(sorted)  // [{user: 'B', age: 30}, {user: 'A', age: 20}, {user: 'C', age:20}]
+
+    // 3. _.cloneDeep: 깊은 복사
+    // - 전개 구문({...obj})은 얕은 복사라 안쪽 배열/객체는 공유됨 -> 깊은 복사는 안쪽까지 새로 만듦
+    const original = {
+      profile: { name: 'Kim', skills: ['JS', 'Vue'] }
+    }
+
+    const deep = _.cloneDeep(original)
+    deep.profile.skills.push('Lodash') // 원본은 안전함
+    console.log("오리지널", original) // skills: ['JS', 'Vue']
+    console.log("깊은 복사", deep) // skills: ['JS', 'Vue', 'Lodash']
+
+    // 4. 깊은 비교
+    const objA = { a: 1, b: { c: 2 } }
+    const objB = { a: 1, b: { c: 2 } }
+
+    console.log(objA === objB) // false (참조가 다름)
+    console.log(_.isEqual(objA, objB)) // true (내용을 비교)
+
+    // 5. _.debounce: 마지막 호출만 실행 (사용자 입력이 끝나고, x초 뒤에 한 번 요청하도록 할 때 유용 )
+    // NodeJS(Redis, RabbitMQ) // 프론트 프레임워크(커스텀 훅으로 가능)
+
+    // 사용자가 입력을 멈춘 지 1000ms가 지나면 함수 실행
+    const handleSearch = _.debounce((keyword) => {
+      console.log(`1초 뒤 호출: `, keyword)
+    }, 1000)
+
+    // input 이벤트 핸들러에 연결
+    // 기존 이벤트 리스너와 다른 형태인데, 이벤트 객체(e)가 꼬이지 않게 하기 위해서
+    // 이벤트 객체를 받은 다음에 해당 객체에서 필요한 정보를 핸들러 함수에 전달하도록 사용
+    const inputElement = document.querySelector('#searchInput')
+    inputElement.addEventListener('input', (e) => handleSearch(e.target.value))
+
+
+    // 6. _.throttle: 일정 주기마다 실행
+    // 프론트 프레임워크에서는 다른 기능과 합쳐져서 자주 사용 됨
+    // Node.Js 에서는 실시간 채팅/게임 이나 로그 파일 저장 시 활용 됨(가벼운 용도로)
+
+    // 마우스를 계속 움직여도 1000ms(1초)마다 한 번씩만 실행됨
+    let mouseNum = 0
+    const handleScroll = _.throttle(() => {
+      mouseNum++
+      console.log('마우스 이동 횟수: ', mouseNum)
+    }, 1000)
+
+    window.addEventListener('mousemove', handleScroll)
+
+    // 7. _.isEmpty: 비어 있는지 확인 (단, 숫자는 항상 비었다고 판단하니 주의 필요)
+    // 프론트: 백엔드에서 받은 데이터가 비었는 지 확인
+    // 백엔드: API 요청에서 파라미터가 비었는 지 확인
+    console.log(_.isEmpty(null))      // true
+    console.log(_.isEmpty(undefined)) // true
+    console.log(_.isEmpty(''))        // true
+    console.log(_.isEmpty([]))        // true
+    console.log(_.isEmpty({}))        // true
+    console.log(_.isEmpty(0)) // true (숫자는 무조건 true)
+    console.log(_.isEmpty(100)) // true (100도 "비었다"고 판단)
+  </script>
+</body>
+
+</html>

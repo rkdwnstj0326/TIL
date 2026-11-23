@@ -1,0 +1,38 @@
+<!-- callback.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 콜백 함수로 기능 바꿔 끼우기
+    // - 뼈대(map)는 그대로 두고, 전달하는 콜백만 바꾸면 전혀 다른 결과를 얻음
+    const numbers = [1, 2, 3, 4]
+
+    // 콜백 함수 1: 각 요소를 두 배로 만드는 함수
+    const double = function (number) {
+      return number * 2
+    }
+
+    // 콜백 함수 2: 각 요소를 제곱하는 함수
+    const square = function (number) {
+      return number * number
+    }
+
+    // 1. double 콜백을 사용 (double()이 아니라 double: 함수를 "전달"만 함)
+    const doubledNumbers = numbers.map(double)
+    console.log(doubledNumbers) // 출력: [2, 4, 6, 8]
+
+    // 2. square 콜백을 사용
+    const squaredNumbers = numbers.map(square)
+    console.log(squaredNumbers) // 출력: [1, 4, 9, 16]
+  </script>
+</body>
+
+</html>

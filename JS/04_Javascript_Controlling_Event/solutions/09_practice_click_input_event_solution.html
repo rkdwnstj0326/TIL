@@ -1,0 +1,60 @@
+<!-- practice_click_input_event.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1></h1>
+  <button id="btn">클릭</button>
+  <input type="text" id="text-input">
+
+  <script>
+    // 목표: 입력 값을 실시간으로 출력하고, 클릭 버튼을 클릭 시 출력 값의 CSS를 변경하기
+
+    // 1. input 구현
+    const inputTag = document.querySelector('#text-input')
+    const h1Tag = document.querySelector('h1')
+
+    const inputHandler = function (event) {
+      h1Tag.textContent = event.currentTarget.value
+    }
+
+    inputTag.addEventListener('input', inputHandler)
+
+
+    // 2. click 구현
+    // - 아래 세 방법 중 하나를 골라 주석을 풀어 실행
+    const btn = document.querySelector('#btn')
+
+    const clickHandler = function () {
+      // 1. add 방법 (한 번 파랗게 바뀌면 그대로 유지)
+      // h1Tag.classList.add('blue')
+
+      // 2. toggle 방법 (누를 때마다 파랑 <-> 원래 색)
+      // h1Tag.classList.toggle('blue')
+
+      // 3. if 방법 (toggle을 직접 구현)
+      // (h1Tag.classList.value)는 다른 클래스가 있어도 참이 될 수 있으니 주의
+      // if (h1Tag.classList.contains('blue')) {
+      //   h1Tag.classList.remove('blue')
+      // } else {
+      //   h1Tag.classList.add('blue')
+      // }
+    }
+
+    btn.addEventListener('click', clickHandler)
+  </script>
+</body>
+
+</html>

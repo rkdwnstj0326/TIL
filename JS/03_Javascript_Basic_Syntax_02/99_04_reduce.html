@@ -1,0 +1,67 @@
+<!-- reduce.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // reduce 메서드
+    // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+    // 배열의 각 요소에 대해서 콜백 함수를 실행하고, 하나의 결과값을 반환 
+    // 배열을 원하는 특정 형태의 값으로 변환(숫자, 문자열, 객체, 배열)
+
+    /*
+      array.reduce(callBackFunction, initialValue)
+      - callBackFunction: 배열을 처리할 콜백함수
+        - accumulator(acc, 필수): 누적값이며, 이전 콜백 함수가 return한 값이 다음 순회의 accumulator로 전달 
+        - currentValue(cur, 필수): 현재 순회에서 처리중인 요소 
+        - currentIndex(idx, 선택): 현재 처리 중인 currentValue의 인덱스 
+        - array(arr, 선택): reduce를 호출한 원본 배열 
+      - initialValue: 누적을 시작할 초기값
+    */
+
+    // 예시1. 숫자 합계 구하기
+    const numbers = [1, 2, 3, 4, 5]
+
+    const sum = numbers.reduce((acc, cur) => {
+      console.log(`누적: ${acc}, 현재: ${cur}`)
+      return acc + cur // 이 리턴 값이 다음 번 acc가 됨!
+    }, 0) // 초기값 0
+
+    console.log(sum) // 15
+
+    // 예시2. 배열 -> 객체로 변환
+    // '이름'을 key로, '등장 횟수'를 value로 하는 객체를 만들자!
+    const names = ['Alice', 'Bob', 'Alice', 'Charlie', 'Bob']
+
+    const nameCounts = names.reduce((acc, name) => {
+      // 현재 이름이 있으면 +1, 없으면 0에서 시작해서 +1
+      acc[name] = (acc[name] || 0) + 1
+      return acc // 수정된 객체를 다음 단계로 넘김
+    }, {}) // 중요! 초기값으로 '빈 객체 {}' 설정
+
+    console.log(nameCounts) // 결과: { Alice: 2, Bob: 2, Charlie: 1 }
+
+    // 예시3. 배열 -> 배열 (map과 filter 한 번에 reduce로 적용하기)
+    // 체이닝으로 한다면?
+    //   - const result = nums.filter(n => n % 2 === 0).map(n => n * 2)
+    const nums = [1, 2, 3, 4, 5]
+
+    const result = nums.reduce((newArr, cur) => {
+      if (cur % 2 === 0) { // 1. Filter 역할 (짝수일 때만)
+        newArr.push(cur * 2) // 2. Map 역할 (2배 해서 push)
+      }
+      return newArr // 3. 누적된 배열 반환
+    }, []) // 초기값은 빈 배열 []
+
+    console.log(result) // [4, 8]
+  </script>
+</body>
+
+</html>

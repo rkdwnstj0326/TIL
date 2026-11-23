@@ -1,0 +1,35 @@
+<!-- array_iteration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta nameset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 배열 순회 종합
+    // - 세 방법 모두 같은 결과(Alice, Bella, Cathy)를 출력
+    const names = ['Alice', 'Bella', 'Cathy']
+
+    // 1. for loop: 인덱스가 필요하거나 반복을 세밀하게 제어할 때
+    for (let idx = 0; idx < names.length; idx++) {
+      console.log(names[idx])
+    }
+
+    // 2. for...of: 값만 필요하고, break/continue로 중간에 멈춰야 할 때
+    for (const name of names) {
+      console.log(name)
+    }
+
+    // 3. forEach: 처음부터 끝까지 순회할 때 (break 불가능)
+    names.forEach((name) => {
+      console.log(name)
+    })
+  </script>
+</body>
+
+</html>

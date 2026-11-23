@@ -1,0 +1,53 @@
+<!-- bubbling.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body * {
+      margin: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="form">
+    form
+    <div id="div">
+      div
+      <p id="p">p</p>
+    </div>
+  </form>
+
+  <script>
+    // 버블링
+    // - 한 요소에서 이벤트가 발생하면, 그 요소의 핸들러가 실행된 뒤 부모, 그 부모 순으로 올라가며 핸들러가 실행됨
+    // - p를 클릭하면 p -> div -> form 순서로 3개의 메시지가 모두 출력됨
+    const formElement = document.querySelector('#form')
+    const divElement = document.querySelector('#div')
+    const pElement = document.querySelector('#p')
+
+    const clickHandler1 = function (event) {
+      console.log('form이 클릭되었습니다.')
+    }
+    const clickHandler2 = function (event) {
+      console.log('div가 클릭되었습니다.')
+    }
+    const clickHandler3 = function (event) {
+      console.log('p가 클릭되었습니다.')
+    }
+
+    formElement.addEventListener('click', clickHandler1)
+    divElement.addEventListener('click', clickHandler2)
+    pElement.addEventListener('click', clickHandler3)
+
+    // => div를 클릭하면? div -> form 2개만 출력 (자기 자신부터 위로만 올라감)
+  </script>
+</body>
+
+</html>

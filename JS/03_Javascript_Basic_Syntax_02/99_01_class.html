@@ -1,0 +1,46 @@
+<!-- class.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 클래스: 객체를 만들기 위한 설계도 (붕어빵 틀)
+    // - constructor: new로 객체를 만들 때 자동으로 실행되어 속성의 초기값을 설정
+    // - 메서드 안의 this는 메서드를 호출한 객체(member1)
+    class Member {
+      constructor(name, age) {
+        this.name = name
+        this.age = age
+      }
+      sayHi() {
+        console.log(`Hi, I am ${this.name}`)
+      }
+    }
+
+    const member1 = new Member('Alice', 20) // new 없이 Member(...)를 호출하면 TypeError
+
+    console.log(member1) // Member { name: 'Alice', age: 20 }
+    console.log(member1.name) // Alice
+    member1.sayHi() // Hi, I am Alice
+
+
+    // [참고] : 생성자 함수 표현 방식 (과거)
+    // - 클래스는 내부적으로 이 방식을 기반으로 동작함
+    // function Member(name, age) {
+    //   this.name = name
+    //   this.age = age
+    //   this.sayHi = function () {
+    //     console.log(`Hi, I am ${this.name}`)
+    //   }
+    // }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!-- addEventListener.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>버튼</button>
+
+  <script>
+    // addEventListener(이벤트 종류, 이벤트 핸들러)
+    // - 특정 요소에 "이 이벤트가 발생하면 이 함수를 실행해 줘"라고 등록
+    // - 핸들러는 우리가 직접 호출하지 않고, 이벤트가 발생할 때 브라우저가 호출함 (콜백 함수)
+    const button = document.querySelector('button')
+
+    // 1. 이벤트 핸들러
+    // TODO: window.alert로 '버튼이 클릭 되었습니다!'를 띄우는 함수를 handleClick에 저장하세요.
+
+    // 2. addEventListener 메서드를 이용해 버튼에 이벤트 핸들러를 등록
+    // - handleClick()이 아니라 handleClick: 지금 실행하는 것이 아니라 "누구를 부를지" 알려 주는 것
+    // [실습 포인트/힌트] 이벤트 종류는 문자열 'click' (on을 붙이지 않음)
+    // TODO: button에 click 이벤트가 발생하면 handleClick이 실행되도록 등록하세요.
+    // 결과: 버튼을 클릭하면 경고창이 뜸 (handleClick()으로 쓰면 클릭하기도 전에 바로 뜸 -> 직접 비교해 보기)
+  </script>
+</body>
+
+</html>

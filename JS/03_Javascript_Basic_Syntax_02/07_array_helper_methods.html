@@ -1,0 +1,89 @@
+<!-- array_helper_methods.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 콜백 함수
+    // - 다른 함수(forEach 등)의 인자로 전달되어, 그 함수 안에서 호출되는 함수
+
+    // 콜백함수 예시 1: 익명 함수를 바로 전달
+    const numbers = [1, 2, 3]
+    numbers.forEach(function (num) {
+      console.log(num) // 1, 2, 3
+    })
+
+    // 콜백함수 예시 2: 미리 만든 함수를 전달 (괄호 없이 함수 이름만)
+    const callBackFunction = function (num) {
+      console.log(num)
+    }
+    numbers.forEach(callBackFunction)
+
+    // 2. forEach
+    // - 배열의 요소마다 콜백 함수를 한 번씩 실행, 반환 값 없음(undefined)
+    const names = ['Alice', 'Bella', 'Cathy']
+
+    // 일반 함수 표기
+    // TODO: 일반 함수(function) 콜백으로 names의 요소를 하나씩 출력하세요.
+    // 결과: Alice, Bella, Cathy
+
+    // 화살표 함수 표기 (콜백은 이 방식을 권장)
+    // [실습 포인트/힌트] function (name) { } -> (name) => { }
+    // TODO: 같은 동작을 화살표 함수 콜백으로 작성하세요.
+    // 결과: Alice, Bella, Cathy
+
+    // 활용: 콜백의 매개변수 (요소, 인덱스, 배열 전체)
+    // [실습 포인트/힌트] 콜백 매개변수의 순서는 (요소, 인덱스, 배열) - 이름은 자유지만 순서는 고정
+    // TODO: (name, index, array)를 받는 콜백으로 `${name} / ${index} / ${array}`를 출력하고 'aaa'를 return 하세요.
+    //       forEach의 결과를 result에 저장해 출력하세요.
+    // 결과: Alice / 0 / Alice,Bella,Cathy ... 그리고 마지막에 undefined (return을 해도 forEach는 아무것도 반환하지 않음)
+
+    // 3. map
+    // - 요소마다 콜백을 실행하고, 콜백이 return한 값을 모아 "새로운 배열"로 반환
+    // 3.1 for...of 와 비교
+    const persons = [
+      { name: 'Alice', age: 20 },
+      { name: 'Bella', age: 21 }
+    ]
+
+    // for...of: 빈 배열을 만들고 직접 push
+    let result1 = []
+    for (const person of persons) {
+      result1.push(person.name)
+    }
+    console.log(result1) // ['Alice', 'Bella']
+
+    // map: "이름만 뽑아 줘"라는 목적이 코드에 바로 드러남
+    // [실습 포인트/힌트] map의 콜백은 반드시 return 해야 함 (return이 없으면 [undefined, undefined])
+    // TODO: map으로 persons의 name만 모은 배열을 result2에 저장하고 출력하세요.
+    // 결과: ['Alice', 'Bella']
+
+
+    // 3.2 화살표 함수 표기
+    const result3 = names.map(function (name) {
+      return name.length
+    })
+    console.log(result3) // [5, 5, 5]
+
+    // TODO: result3과 같은 동작을 화살표 함수 콜백으로 작성해 result4에 저장하고 출력하세요.
+    // 결과: [5, 5, 5]
+
+
+    // 3.3 커스텀 콜백 함수
+    const myCallbackFunc = function (number) {
+      return number * 2
+    }
+    // [실습 포인트/힌트] 미리 만든 함수를 넘길 때는 괄호 없이 이름만 (myCallbackFunc() X)
+    // TODO: numbers.map에 myCallbackFunc를 전달해 doubleNumber에 저장하고 출력하세요.
+    // 결과: [2, 4, 6]
+  </script>
+</body>
+
+</html>

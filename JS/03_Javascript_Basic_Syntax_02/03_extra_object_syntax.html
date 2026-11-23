@@ -1,0 +1,141 @@
+<!-- extra_object_syntax.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 단축 속성
+    // - key 이름과 값으로 쓰는 변수 이름이 같으면 한 번만 작성
+    const name = 'Alice'
+    const age = 30
+
+    // 단축 속성 전
+    // const user = {
+    //   name: name,
+    //   age: age
+    // }
+
+    // 단축 속성 후
+    // TODO: 단축 속성으로 name, age를 가진 user 객체를 만들고 출력하세요.
+    // 결과: {name: 'Alice', age: 30}
+
+    // 2. 단축 메서드
+    // - 메서드를 정의할 때 function 키워드 생략
+
+    // 단축 메서드 전
+    // const myObj1 = {
+    //   myFunc: function () {
+    //     return 'Hello'
+    //   }
+    // }
+
+    // 단축 메서드 후
+    // [실습 포인트/힌트] ': function' 부분을 지우고 메서드이름() { } 형태로
+    // TODO: 단축 메서드로 'Hello'를 반환하는 myFunc를 가진 myObj1을 만들고, 호출 결과를 출력하세요.
+    // 결과: Hello
+
+    // 3. 계산된 속성
+    // - [ ] 안의 값을 계산해서 key로 사용 (고정된 이름이 아니라 변수 값을 key로)
+    // - 페이지를 열면 입력 창이 뜸 (예: '연필' 입력)
+    const product = prompt('물건 이름을 입력해주세요')
+    const prefix = 'my'
+    const suffix = 'property'
+
+    // [실습 포인트/힌트] { [변수]: 값 } - 대괄호가 없으면 변수 값이 아니라 'product'라는 글자 그대로가 key가 됨
+    // TODO: product 값을 key로 5를, prefix + suffix 값을 key로 'value'를 가진 bag 객체를 만들고 출력하세요.
+    // 결과: {연필: 5, myproperty: 'value'}
+
+
+    // 4. 구조 분해 할당
+    // - 객체의 속성을 같은 이름의 변수로 한 번에 꺼냄
+    const userInfo = {
+      firstName: 'Alice',
+      userId: 'alice123',
+      email: 'alice123@gmail.com'
+    }
+
+    // 구조 분해 할당 전
+    // const firstName = userInfo.firstName
+    // const userId = userInfo.userId
+    // const email = userInfo.email
+
+    // 구조 분해 할당 후
+    // [실습 포인트/힌트] const { 속성이름1, 속성이름2 } = 객체 - 변수 이름이 속성 이름과 같아야 꺼내짐
+    // TODO: 구조 분해 할당으로 userInfo에서 firstName, userId, email을 한 번에 꺼내 출력하세요.
+    // 결과: Alice alice123 alice123@gmail.com
+
+    // 구조 분해 할당 활용 - 함수 매개변수
+    // 구조 분해 할당 활용 전
+    // function printInfo(userInfo) {
+    //   console.log(`이름: ${userInfo.firstName}, 나이: ${userInfo.age}, 도시: ${userInfo.city}`)
+    // }
+    // printInfo(userInfo)
+
+    // 구조 분해 할당 활용 후
+    // - 객체를 통째로 넘기면, 매개변수 자리에서 필요한 속성만 꺼내 씀
+    // [실습 포인트/힌트] 매개변수 자리에 { firstName, email }을 그대로 쓰면 됨
+    // TODO: 매개변수에서 firstName, email을 꺼내 `이름: ..., 이메일: ...`을 출력하는 printInfo를 만들고 userInfo로 호출하세요.
+    // 결과: 이름: Alice, 이메일: alice123@gmail.com
+
+    // 5. 전개 구문
+    // - 객체 안에서 다른 객체의 속성을 펼쳐 넣음 (얕은 복사)
+    // - 같은 key가 있으면 뒤에 쓴 값이 앞의 값을 덮어씀
+    const obj = { a: 2, c: 3, d: 4 }
+    // TODO: obj를 펼친 뒤 a: 1, e: 5를 이어 쓴 newObj를 만들고 출력하세요.
+    // 결과: {a: 1, c: 3, d: 4, e: 5} (a는 뒤에 쓴 1로 덮어써짐)
+    // [실습 포인트/힌트] 작성 후 a: 1을 ...obj 앞으로 옮기면 결과가 어떻게 바뀌는지도 확인
+
+    // 6. 유용한 객체 메서드
+    // - key, value, [key, value] 쌍을 "배열"로 반환
+    const profile = {
+      name: 'Alice',
+      age: 30
+    }
+
+    // TODO: Object.keys, Object.values, Object.entries로 profile을 각각 출력하세요.
+    // 결과: ['name', 'age'] / ['Alice', 30] / [['name', 'Alice'], ['age', 30]]
+
+    // 7. Optional Chaining
+    // - ?. 앞의 대상이 null 또는 undefined이면, 에러 대신 undefined를 반환하고 평가를 멈춤
+    const userData = {
+      name: 'Alice',
+      greeting: function () {
+        return 'hello'
+      }
+    }
+
+    // 예전 방식
+    console.log(userData.address && userData.address.street) // undefined
+
+    // 변수 옵셔널 체이닝
+    // ※ 에러가 나면 아래 코드가 실행되지 않으므로, 에러 줄은 주석을 풀어 따로 확인
+    // console.log(userData.address.street) // Uncaught TypeError: Cannot read properties of undefined (reading 'street')
+    // TODO: 옵셔널 체이닝으로 userData.address의 street를 에러 없이 조회해 출력하세요.
+    // 결과: undefined
+
+    // 함수 옵셔널 체이닝
+    // console.log(userData.nonMethod()) // Uncaught TypeError: userData.nonMethod is not a function
+    // [실습 포인트/힌트] 함수 호출은 ?.() 형태
+    // TODO: 옵셔널 체이닝으로 userData.nonMethod를 에러 없이 호출해 결과를 출력하세요.
+    // 결과: undefined
+
+
+    // 주의: 존재하지 않아도 괜찮은 대상에만 사용
+    // 위 예시 코드 논리상 user는 반드시 있어야 하지만 address는 필수 값이 아님
+    // user에 값을 할당하지 않은 문제가 있을 때 바로 알아낼 수 있어야 하기 때문
+    // Bad
+    userData?.address?.street
+
+    // Good
+    userData.address?.street
+  </script>
+</body>
+
+</html>

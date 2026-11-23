@@ -1,0 +1,34 @@
+<!-- bubbling_example.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <button>버튼1</button>
+    <button>버튼2</button>
+    <button>버튼3</button>
+    <button>버튼4</button>
+    <button>버튼5</button>
+  </div>
+  <script>
+    // 버블링 활용 (이벤트 위임)
+    // - 버튼 5개에 핸들러를 각각 달지 않고, 공통 부모(div)에 하나만 등록
+    // - event.target으로 실제로 클릭된 버튼을 알 수 있음
+    const divTag = document.querySelector('div')
+
+    // [실습 포인트/힌트] 핸들러가 연결된 요소(div)는 event.currentTarget, 실제로 클릭된 요소(button)는 event.target
+    // TODO: 실제로 클릭된 요소를 출력하는 clickHandler를 만들고, 버튼이 아니라 divTag에 click 이벤트로 등록하세요.
+    // 결과: 버튼3을 클릭하면 <button>버튼3</button>
+
+    // => 버튼이 나중에 추가되어도 따로 등록할 필요가 없음 (Ajax with Django 좋아요 실습에서 사용)
+  </script>
+</body>
+
+</html>

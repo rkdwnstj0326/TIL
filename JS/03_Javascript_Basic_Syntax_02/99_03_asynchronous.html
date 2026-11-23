@@ -1,0 +1,32 @@
+<!-- asynchronous.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 비동기적 측면 (맛보기)
+    // - setTimeout은 콜백을 3초 뒤에 실행하도록 "예약"만 하고 바로 다음 줄로 넘어감
+    // - 자세한 동작 원리는 Ajax 수업에서 다룸
+    console.log('a')
+
+    setTimeout(() => {
+      console.log('b')
+    }, 3000)
+
+    console.log('c')
+
+    // 출력 결과
+    // a
+    // c
+    // b (3초 뒤)
+  </script>
+</body>
+
+</html>

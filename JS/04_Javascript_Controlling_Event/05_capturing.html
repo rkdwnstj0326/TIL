@@ -1,0 +1,55 @@
+<!-- capturing.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Capturing</title>
+  <style>
+    body * {
+      margin: 10px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="form">
+    form
+    <div id="div">
+      div
+      <p id="p">p</p>
+    </div>
+  </form>
+
+  <script>
+    // 캡처링
+    // - 이벤트가 최상위 조상에서 실제 요소까지 "아래로" 전파되는 단계 (버블링과 반대 방향)
+    // - p를 클릭하면 form -> div -> p 순서로 출력됨 (bubbling.html과 비교)
+    const formElement = document.querySelector('#form')
+    const divElement = document.querySelector('#div')
+    const pElement = document.querySelector('#p')
+
+    const clickHandler1 = function (event) {
+      console.log('form이 클릭되었습니다.')
+    }
+    const clickHandler2 = function (event) {
+      console.log('div가 클릭되었습니다.')
+    }
+    const clickHandler3 = function (event) {
+      console.log('p가 클릭되었습니다.')
+    }
+
+    // 캡처링 : 세 번째 인자로 true를 전달
+    // 사용하는 경우: 자식 요소들이 이벤트를 처리하기도 전에 부모 선에서 먼저 검사하거나 막아야 할 때
+    // 근데 거의 사용 안 함!
+    formElement.addEventListener('click', clickHandler1, true)
+    divElement.addEventListener('click', clickHandler2, true)
+    pElement.addEventListener('click', clickHandler3, true)
+  </script>
+</body>
+
+</html>

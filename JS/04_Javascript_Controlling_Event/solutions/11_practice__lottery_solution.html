@@ -1,0 +1,52 @@
+<!-- practice_lottery.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>로또 추천 번호</h1>
+  <button id="btn">행운 번호 받기</button>
+  <div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    // 목표: '행운 번호 받기' 버튼 클릭 시, 6개의 랜덤 번호를 리스트로 출력하기
+
+    // 1. 필요한 요소 선택
+    const btn = document.querySelector('#btn')
+    const divTag = document.querySelector('div')
+
+    // 2. 로또 번호를 화면에 출력하는 함수 (이벤트 핸들러)
+    const getLottery = function (event) {
+      // 2.1 1부터 45까지의 배열 생성
+      const numbers = _.range(1, 46)
+      // 2.2 45개의 요소가 있는 배열에서 6개의 랜덤 번호 추출
+      const sixNumbers = _.sampleSize(numbers, 6)
+
+      // 2.3 6개의 li 요소를 담을 ul 요소 생성
+      const ulTag = document.createElement('ul')
+      // 2.4 추출한 번호 배열을 "반복"하면서 li 요소를 생성
+      sixNumbers.forEach((number) => {
+        // 2.5 번호를 담을 li 요소 생성 후 입력
+        const liTag = document.createElement('li')
+        // 2.6 번호를 li 요소에 입력
+        liTag.textContent = number
+        // 2.7 만들어진 li를 ul 요소에 추가
+        ulTag.appendChild(liTag)
+      })
+      // 2.8 완성한 ul 요소를 div 요소에 추가 (버튼을 누를 때마다 새 ul이 아래에 쌓임)
+      divTag.appendChild(ulTag)
+    }
+
+    // 3. 버튼 요소에 이벤트 핸들러를 등록
+    btn.addEventListener('click', getLottery)
+  </script>
+</body>
+
+</html>

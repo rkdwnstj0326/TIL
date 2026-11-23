@@ -1,0 +1,37 @@
+<!-- array_method.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 배열 기본 조작 메서드
+    // - 네 메서드 모두 원본 배열을 직접 수정함
+    const names = ['Alice', 'Bella', 'Cathy']
+
+    // 1. push: 배열 끝에 추가, 새로운 길이를 반환
+    // TODO: names 끝에 'Dan'을 추가하고 names를 출력하세요.
+    // 결과: ['Alice', 'Bella', 'Cathy', 'Dan']
+
+    // 2. pop: 배열 끝 요소를 제거하고, 제거한 요소를 반환
+    // [실습 포인트/힌트] pop()의 반환 값(제거한 요소)을 바로 console.log로 확인
+    // TODO: names의 끝 요소를 제거하며 제거한 요소를 출력하고, names도 출력하세요.
+    // 결과: Dan / ['Alice', 'Bella', 'Cathy']
+
+    // 3. unshift: 배열 앞에 추가 (모든 요소를 한 칸씩 밀어야 해서 배열이 클수록 느림)
+    // TODO: names 앞에 'Eric'을 추가하고 names를 출력하세요.
+    // 결과: ['Eric', 'Alice', 'Bella', 'Cathy']
+
+    // 4. shift: 배열 앞 요소를 제거하고, 제거한 요소를 반환
+    // TODO: names의 앞 요소를 제거하며 제거한 요소를 출력하고, names도 출력하세요.
+    // 결과: Eric / ['Alice', 'Bella', 'Cathy']
+  </script>
+</body>
+
+</html>

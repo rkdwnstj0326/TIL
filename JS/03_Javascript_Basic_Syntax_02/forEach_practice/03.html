@@ -1,0 +1,53 @@
+<!-- forEach_practice_03.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const library = {
+      books: [
+        { id: 1, title: '자바스크립트 완벽 가이드', status: 'available' },
+        { id: 2, title: '파이썬 기초', status: 'borrowed' },
+        { id: 3, title: 'HTML/CSS 입문', status: 'available' }
+      ],
+      borrowHistory: [
+        { bookId: 2, userId: 'user1', date: '2024-10-20' },
+        { bookId: 1, userId: 'user2', date: '2024-10-15' },
+        { bookId: 1, userId: 'user2', date: '2024-10-23' }
+      ]
+    }
+
+    // forEach를 사용하여 다음을 구현하세요:
+    // 1. 현재 대출 가능한 도서 목록
+    // 2. 특정 사용자(user2)의 대출 이력
+
+    // 대출 가능 도서
+    // [실습 포인트/힌트] library.books를 순회하며 status가 'available'인 책의 title만 push
+    // TODO: availableBooks를 채우세요.
+    const availableBooks = []
+
+    // user2 대출 이력
+    // [실습 포인트/힌트] library.borrowHistory를 순회하며 userId가 'user2'인 기록만 고릅니다.
+    // [실습 포인트/힌트] 대출 기록에는 bookId만 있으므로, library.books에서 id가 같은 책을 찾아 title을 가져옵니다.
+    // TODO: { title, date } 형태의 객체를 user2History에 push 하세요.
+    const user2History = []
+
+    console.log(availableBooks)
+    console.log(user2History)
+    // 결과
+    // 대출 가능 도서: [ '자바스크립트 완벽 가이드', 'HTML/CSS 입문' ]
+    // user2 대출 이력: [
+    //   { title: '자바스크립트 완벽 가이드', date: '2024-10-15' },
+    //   { title: '자바스크립트 완벽 가이드', date: '2024-10-23' }
+    // ]
+  </script>
+</body>
+
+</html>
