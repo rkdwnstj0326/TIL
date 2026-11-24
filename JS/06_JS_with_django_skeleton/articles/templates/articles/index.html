@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Hello, {{ user.username }}</h3>
+  {% comment %} <h3>Hello, {{ request.user.username }}</h3> {% endcomment %}
+
+  <h1>메인 페이지</h1>
+
+  {% if request.user.is_authenticated  %}
+    <a href="{% url "accounts:profile" user.username %}">내 프로필</a>
+    <form action="{% url "accounts:logout" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="Logout">
+    </form>
+    <a href="{% url "accounts:update" %}">회원정보수정</a>
+    <form action="{% url "accounts:delete" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="회원탈퇴">
+    </form>
+    <a href="{% url "articles:create" %}">CREATE</a>
+  {% else %}
+    <a href="{% url "accounts:login" %}">Login</a>
+    <a href="{% url "accounts:signup" %}">회원가입</a>
+  {% endif %}
+
+  <hr>
+
+  {% for article in articles %}
+    <div>
+      <p>
+        작성자 :
+        <a href="{% url "accounts:profile" article.user.username %}">{{ article.user }}</a>
+      </p>
+      {% comment %} <p>작성자 : {{ article.user.username }}</p> {% endcomment %}
+      <p>글 번호: {{ article.pk }}</p>
+      <p>
+        글 제목: <a href="{% url "articles:detail" article.pk %}">{{ article.title }}</a>
+      </p>
+      <p>글 내용: {{ article.content }}</p>
+      <form action="{% url "articles:likes" article.pk %}" method="POST"> 
+        {% csrf_token %}
+        {% if request.user in article.like_users.all %}
+          <input type="submit" value="좋아요 취소">
+        {% else %}
+          <input type="submit" value="좋아요">
+        {% endif %}
+      </form>
+    </div>
+    <hr>
+  {% endfor %}
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+  <script>
+    // 비동기 좋아요
+    // - 좋아요 form이 게시글마다 있으므로, 각각 등록하지 않고 공통 부모(.article-container)에 한 번만 등록 (버블링 활용)
+
+    // 1. 모든 좋아요 form을 감싸는 부모 요소와 CSRF 토큰 가져오기
+    // 2. 자식 form에서 발생한 submit 이벤트가 부모까지 올라오면 실행
+      // 3. 제출된 form의 data-article-id 가져오기
+        // 4. 응답의 좋아요 여부에 따라, 해당 게시글의 버튼(#like-게시글번호)만 문구 변경
+  </script>
+</body>
+</html>

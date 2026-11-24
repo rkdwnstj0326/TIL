@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>{{ person.username }}님의 프로필</h1>
+  <div>
+    팔로워 : {{ person.followers.all|length }} / 팔로우 : {{ person.followings.all|length }}
+  </div>
+
+  {% if request.user != person %}
+    <form action="{% url "accounts:follow" person.pk %}" method="POST"> 
+      {% csrf_token %}
+      {% if request.user in person.followers.all %}
+        <input type="submit" value='UnFollow'>
+      {% else %}
+        <input type="submit" value='Follow'>
+      {% endif %}
+    </form>
+  {% endif %}
+  <hr>
+
+  {% comment %} 게시글 {% endcomment %}
+  <h2>{{ person.username }} 작성한 게시글</h2>
+  {% for article in person.article_set.all %}
+    <div>{{ article.title }}</div>
+  {% endfor %}
+  <hr>
+
+  {% comment %} 댓글 {% endcomment %}
+  <h2>{{ person.username }} 작성한 댓글</h2>
+  {% for comment in person.comment_set.all %}
+    <div>{{ comment.content }}</div>
+  {% endfor %}
+  <hr>
+
+  {% comment %} 좋아요 한 게시글 {% endcomment %}
+  <h2>{{ person.username }} 좋아요 한 게시글</h2>
+  {% for article in person.like_articles.all %}
+    <div>{{ article.title }}</div>
+  {% endfor %}
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+  <script>
+    // 비동기 팔로우
+    // - form 제출(새로고침) 대신 axios로 요청을 보내고, 응답(JSON)으로 버튼과 숫자만 바꿈
+    
+    // 1. 선택자를 활용해서 html 요소 가져오기
+    // 2. 폼을 제출했을 때 => 새로고침을 막고, axios를 활용해서 비동기적으로 팔로우를 진행
+      // 3. 팔로우할 유저의 pk 가져오기 (form의 data-user-id 속성 => dataset.userId)
+      // 4. 템플릿의 csrf_token 태그가 만든 hidden input에서 토큰 값 가져오기
+        // 5. view가 JsonResponse로 보낸 데이터로 화면의 일부만 갱신
+        // 5.1 팔로우 상태에 따라 버튼 문구 변경
+        // 5.2 팔로잉, 팔로워 수 변경
+  </script>
+</body>
+</html>

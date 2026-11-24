@@ -1,0 +1,113 @@
+<!-- promise_advanced.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 그러면 모든 곳에 await를 하나씩 붙이면 될까?
+    // 예시) 1초, 1.5초, 2초 걸리는 메뉴를 모두 받은 뒤에 결과를 출력해야 하는 경우
+    // ※ 아래 1~4번 함수 호출은 한 번에 하나씩 주석을 풀어 실행하면 결과를 보기 쉽습니다.
+    const getBurger = () => new Promise((resolve) => setTimeout(() => resolve('햄버거'), 1000))
+    const getFries = () => new Promise((resolve) => setTimeout(() => resolve('감자튀김'), 1500))
+    const getCoke = () => new Promise((resolve) => setTimeout(() => resolve('콜라'), 2000))
+
+    // 1. await를 하나씩 사용 (순차 실행)
+    // 워터폴 현상: 서로 상관없는 작업인데도 앞의 작업이 끝날 때까지 기다리는 비효율
+    const order = async function () {
+      console.time('순차 주문')
+
+      const burger = await getBurger() // 1초 대기
+      const fries = await getFries() // 1.5초 대기
+      const coke = await getCoke() // 2초 대기
+
+      console.log(`${burger}, ${fries}, ${coke}`)
+      console.timeEnd('순차 주문') // 약 4.5초
+    }
+
+    order()
+
+    // 2. Promise.all (동시 실행)
+    // - 순서와 상관없는 작업들을 한 번에 시작하고, 모두 끝날 때까지 한 번만 기다림
+    // - 하나라도 실패하면 전체가 실패(catch)로 처리됨
+    const promiseAllOrder = async function () {
+      console.time('동시 주문')
+
+      // await를 붙이지 않았으므로 멈추지 않고, 세 작업이 동시에 시작됨
+      const burgerPromise = getBurger()
+      const friesPromise = getFries()
+      const cokePromise = getCoke()
+
+      // 세 Promise가 모두 끝날 때까지 한 번만 기다림
+      const [burger, fries, coke] = await Promise.all([burgerPromise, friesPromise, cokePromise])
+
+      console.log(`${burger}, ${fries}, ${coke}`)
+      console.timeEnd('동시 주문') // 약 2초 (가장 오래 걸리는 작업 시간만큼)
+    }
+
+    // promiseAllOrder()
+
+    // 알아두면 좋은 추가 Promise 메서드
+    // 3. Promise.allSettled(): 일부가 실패해도 모든 결과를 받아 봄
+    const getCokeError = () => new Promise((resolve, reject) => {
+      setTimeout(() => reject(new Error('콜라 기계 고장')), 500)
+    })
+
+    const promiseSettledOrder = async function () {
+      const results = await Promise.allSettled([
+        getBurger(), // 성공 (1초)
+        getFries(), // 성공 (1.5초)
+        getCokeError() // 실패 (0.5초)
+      ])
+
+      /* status: fulfilled(성공), rejected(실패)
+      [
+        { status: 'fulfilled', value: '햄버거' },
+        { status: 'fulfilled', value: '감자튀김' },
+        { status: 'rejected', reason: Error: 콜라 기계 고장 }
+      ]
+      */
+      console.log(results)
+
+      // 성공한 메뉴만이라도 손님상에 내보내기
+      const successMenu = results
+        .filter((item) => item.status === 'fulfilled')
+        .map((item) => item.value)
+
+      console.log(`손님, 죄송하지만 콜라는 빼고 ${successMenu}만 준비했습니다.`)
+    }
+
+    // promiseSettledOrder()
+
+    // 4. Promise.race(): 가장 먼저 끝난 결과 하나만 사용
+    // 실제로는 "정해진 시간 안에 응답이 없으면 실패 처리"(타임아웃) 용도로 자주 사용
+    const timeoutLimit = () => new Promise((resolve, reject) => {
+      setTimeout(() => reject('시간 초과! 주문 취소'), 1500) // 1.5초 뒤 무조건 실패
+    })
+
+    const promiseRaceOrder = async function () {
+      try {
+        // 콜라(2초) vs 타임아웃(1.5초) -> 타임아웃이 먼저 끝남
+        const winner = await Promise.race([
+          getCoke(),
+          timeoutLimit()
+        ])
+
+        // 콜라가 1.5초보다 빨랐다면 여기가 실행됨
+        console.log('받은 음식:', winner)
+      } catch (error) {
+        console.log('결과:', error) // 결과: 시간 초과! 주문 취소
+      }
+    }
+
+    // promiseRaceOrder()
+  </script>
+</body>
+
+</html>

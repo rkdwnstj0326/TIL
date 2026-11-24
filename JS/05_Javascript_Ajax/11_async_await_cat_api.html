@@ -1,0 +1,46 @@
+<!-- async_await_cat_api.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat API (async/await)</title>
+</head>
+
+<body>
+  <button>냥냥펀치</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+  <script>
+    const API_URL = 'https://api.thecatapi.com/v1/images/search'
+    const btn = document.querySelector('button')
+
+    // cat_api_ad_chaining.html을 async/await로 바꾼 버전
+    // 1. 함수 앞에 async 키워드 추가
+    // TODO: 아래 getCats 함수 앞에 async 키워드를 추가하세요.
+    const getCats = function () {
+      // 2. 에러 처리는 try/catch (then 방식의 catch와 같은 역할)
+      // TODO: try/catch를 작성하고, catch에서는 error와 '실패했다옹'을 출력하세요.
+
+      // 아래 3 ~ 5번은 try 블록 안에 작성합니다.
+      // 3. Promise를 반환하는 axios 앞에 await -> 응답이 올 때까지 이 줄에서 대기
+      // TODO: await로 API_URL에 GET 요청을 보내고 결과를 response에 저장하세요.
+
+      // 4. 첫 번째 then에서 하던 일 (이미지 주소 꺼내기)
+      // TODO: response에서 이미지 주소를 꺼내 imgUrl에 저장하세요.
+
+      // 5. 두 번째 then에서 하던 일 (화면에 이미지 그리기)
+      // TODO: img 요소를 만들어 src에 imgUrl을 넣고 body에 추가하세요.
+
+      // [비교] then 방식에서는 '야옹야옹'이 요청 직후(이미지가 뜨기 전)에 출력됐지만,
+      // 여기서는 await가 끝난 뒤 순서대로 실행되므로 "이미지가 뜬 뒤에" 출력됨
+      // TODO: try 블록의 마지막 줄에 '야옹야옹'을 출력하세요.
+    }
+
+    btn.addEventListener('click', getCats)
+  </script>
+</body>
+
+</html>

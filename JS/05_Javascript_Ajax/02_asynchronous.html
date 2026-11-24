@@ -1,0 +1,38 @@
+<!-- asynchronous.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 비동기(Asynchronous)
+    // - 오래 걸리는 작업을 기다리지 않고 다음 작업을 바로 실행
+    // - setTimeout은 콜백을 3초 뒤에 실행하도록 "예약"만 하고 바로 다음 줄로 넘어감
+    console.log('작업 1 시작')
+
+    const asyncTask = function (callback) {
+      setTimeout(() => {
+        callback('작업 완료') // 3초 뒤, 넘겨받은 콜백에 결과를 전달하며 호출
+      }, 3000)
+    }
+
+    asyncTask((result) => {
+      console.log(result)
+    })
+
+    console.log('작업 2 시작')
+
+    // 출력결과
+    // 작업 1 시작
+    // 작업 2 시작
+    // 작업 완료 (3초 뒤)
+  </script>
+</body>
+
+</html>

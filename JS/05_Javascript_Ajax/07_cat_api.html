@@ -1,0 +1,33 @@
+<!-- cat_api.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+  <script>
+    // 고양이 사진 가져오기 - 기본
+    // - 응답을 기다리는 동안 다음 코드가 먼저 실행되는지 확인
+    // 변수명을 URL로 지으면 브라우저 내장 URL 객체(window.URL)를 가려 axios가 동작하지 않음 -> API_URL 사용
+    const API_URL = 'https://api.thecatapi.com/v1/images/search'
+
+    // [실습 포인트/힌트] 변수에 담지 않고 axios({ ... }).then(...).catch(...)로 바로 이어 쓰기
+    // TODO: API_URL로 GET 요청을 보내세요.
+    //       성공하면 response와 response.data를, 실패하면 error와 '실패했다옹'을 출력하세요.
+
+    // TODO: 요청 코드 바로 아래(then/catch 바깥)에서 '야옹야옹'을 출력하세요.
+
+    // 출력결과
+    // 야옹야옹 (요청을 보낸 직후 바로 실행)
+    // Response 객체, 응답 데이터 (응답이 도착한 뒤 실행)
+    // 응답 데이터: [{ id, url, width, height }] (배열 안에 객체 1개)
+  </script>
+</body>
+
+</html>

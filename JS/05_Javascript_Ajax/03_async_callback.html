@@ -1,0 +1,35 @@
+<!-- async_callback.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 비동기 콜백
+    // - 비동기 작업이 끝난 "뒤에" 실행할 일을 콜백 함수로 미리 전달
+    // - 이런 콜백이 여러 단계 중첩되면 콜백 지옥이 됨 -> Promise로 해결 (promise.html)
+    const asyncTask = function (callback) {
+      setTimeout(function () {
+        console.log('비동기 작업 완료')
+        callback() // 작업이 끝난 뒤 콜백 호출
+      }, 2000) // 2초 후에 작업 완료
+    }
+
+    // 비동기 작업 수행 후 콜백 실행
+    asyncTask(function () {
+      console.log('작업 완료 후 콜백 실행')
+    })
+
+    // 출력결과 (2초 뒤)
+    // 비동기 작업 완료
+    // 작업 완료 후 콜백 실행
+  </script>
+</body>
+
+</html>
