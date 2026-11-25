@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open('input.txt')
+
 T = int(input())
 for tc in range(1, T + 1):
     N = int(input())
@@ -5,6 +8,8 @@ for tc in range(1, T + 1):
 
     # 내가 지워야할 글자 수
     count = 0
+
+    # 범위 설정
     for i in range(N - 1):
         if txt[i] in 'ab' and txt[i + 1] in 'ab':
             count += 1

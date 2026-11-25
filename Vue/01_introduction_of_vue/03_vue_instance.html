@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Application 생성과 ref</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- setup에서 return한 message를 템플릿에서 사용 (.value 없이 사용) -->
+    <!-- TODO: h1 안에 message를 출력하세요. -->
+
+    <!-- {{ }} 안에는 값이 되는 JavaScript 표현식 하나를 작성할 수 있음 -->
+    <!-- [실습 포인트/힌트] 문자열 뒤집기: split('') -> reverse() -> join('') -->
+    <!-- TODO: h1 안에 message를 거꾸로 뒤집어 출력하세요. (결과: !euv olleH) -->
+
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    // CDN으로 불러온 전역 Vue 객체에서 필요한 함수만 꺼내기
+    const { createApp, ref } = Vue
+
+    // createApp에 전달하는 객체 = Root Component
+    const app = createApp({
+      // 컴포넌트가 동작하기 전에 상태와 함수를 준비하는 곳
+      setup() {
+        // [실습 포인트/힌트] ref(초기값)으로 반응형 상태를 만듦
+        // TODO: 'Hello vue!'를 값으로 가지는 ref를 message에 저장하세요.
+
+        // TODO: message와 message.value를 각각 출력해 차이를 확인하세요.
+        // 결과: ref 객체 / Hello vue!
+
+        // return한 것만 템플릿에서 사용할 수 있음
+        // TODO: message를 return 하는 객체에 추가하세요.
+        return {
+        }
+      }
+    })
+
+    // id가 app인 요소에 Vue 앱을 연결 (앱마다 한 번만 호출)
+    // [실습 포인트/힌트] CSS 선택자 문자열로 연결할 요소를 지정
+    // TODO: app을 id가 app인 요소에 mount 하세요.
+
+    console.log(app)
+  </script>
+</body>
+
+</html>

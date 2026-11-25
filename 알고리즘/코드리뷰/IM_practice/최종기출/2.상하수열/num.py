@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open('input.txt')
+
 T = int(input())
 for tc in range(1, T + 1):
     N = int(input())
@@ -7,7 +10,6 @@ for tc in range(1, T + 1):
     count = 0 # 상하수열의 길이
     for k in range(N - 2): # 인덱스 주의! 두 칸 앞을 검사하기 때문
         if A[k] == A[k + 2]:
-        # if A[k] - A[k + 1] == -1 * (A[k + 1] - A[k + 2]):
             count += 1 # 연속한 상하수열
             max_v = max(count, max_v) # 최대 길이 갱신
         else:

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 변수 vs. 일반 변수</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>반응형 변수: {{ reactiveValue }}</p>
+    <p>일반 변수: {{ normalValue }}</p>
+    <button v-on:click="updateValues">값 업데이트</button>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        const reactiveValue = ref(0)
+        let normalValue = 0
+        const updateValues = function () {
+          reactiveValue.value++
+          normalValue++
+          // 콘솔에서는 normalValue도 1, 2, 3... 증가하지만 화면은 0에 머무름
+          // => return 시점의 값(0)이 템플릿에 복사되어 전달되었기 때문
+          console.log('reactiveValue:', reactiveValue.value, '/ normalValue:', normalValue)
+        }
+        return {
+          reactiveValue,
+          normalValue,
+          updateValues
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>

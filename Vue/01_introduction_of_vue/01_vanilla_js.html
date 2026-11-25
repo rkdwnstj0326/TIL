@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JS로 같은 데이터 출력하기</title>
+</head>
+
+<body>
+  <label for="inputArea">Username: </label>
+  <input type="text" id="inputArea" name="inputArea">
+  <hr>
+  <h1>안녕 하세요 <span id="username1"></span></h1>
+
+  <div>
+    <span id="username2"></span>님의 친구 목록
+  </div>
+  <div>
+    <span id="username3"></span>님의 알림 목록
+  </div>
+  <div>
+    <span id="username4"></span>님의 친구 요청 목록
+  </div>
+  <script>
+    const initialText = 'Unknown User'
+    const inputArea = document.querySelector('#inputArea')
+    const username1 = document.querySelector('#username1')
+    const username2 = document.querySelector('#username2')
+    const username3 = document.querySelector('#username3')
+    const username4 = document.querySelector('#username4')
+
+    // 같은 값을 출력하는 곳마다 하나씩 직접 넣어 줘야 함
+    username1.textContent = initialText
+    username2.textContent = initialText
+    username3.textContent = initialText
+    username4.textContent = initialText
+
+    inputArea.addEventListener('input', function (e) {
+      console.log('입력값:', e.target.value)
+      // 출력하는 곳이 늘어나면 이 코드도 같이 늘어남
+      username1.textContent = e.target.value
+      username2.textContent = e.target.value
+      username3.textContent = e.target.value
+      username4.textContent = e.target.value
+    })
+  </script>
+</body>
+
+</html>

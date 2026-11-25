@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JS 코드를 Vue로 다시 쓰기</title>
+</head>
+
+<body>
+  <div id="app">
+    <label for="inputArea">Username: </label>
+    <!-- TODO: input에 v-on:input으로 onInput을 연결하세요. -->
+    <input type="text" id="inputArea">
+    <hr>
+    <!-- username을 쓰는 곳이 늘어나도 JS 코드는 그대로 -->
+    <!-- TODO: 아래 4곳에 username을 출력하세요. ({{ }} 사용, '안녕 하세요' 뒤와 각 '님의' 앞) -->
+    <h1>안녕 하세요 </h1>
+    <div>님의 친구 목록</div>
+    <div>님의 알림 목록</div>
+    <div>님의 친구 요청 목록</div>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        // 데이터는 한 곳에서만 관리
+        // TODO: 'Unknown User'를 초기값으로 가지는 ref를 username에 저장하세요.
+
+        const onInput = function (event) {
+          console.log('입력값:', event.target.value)
+          // 데이터만 바꾸면 username을 쓰는 모든 곳이 자동으로 갱신됨
+          // TODO: 입력한 값(event.target.value)을 username에 저장하세요.
+
+        }
+
+        // TODO: username을 return 하는 객체에 추가하세요.
+        return {
+          onInput
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>

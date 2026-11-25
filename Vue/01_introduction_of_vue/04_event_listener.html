@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue 이벤트 처리</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- [실습 포인트/힌트] v-on:이벤트이름="setup에서 return한 함수 이름" -->
+    <!-- TODO: 버튼을 클릭하면 increment가 실행되도록 v-on:click을 작성하세요. -->
+    <button>버튼</button>
+    <p>{{ number }}</p>
+    <p>{{ number }}</p>
+    <p>{{ number }}</p>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        const number = ref(0)
+        const increment = function () {
+          // console.log(number) // ref 객체
+          // 스크립트에서는 .value로 값을 변경
+          // [실습 포인트/힌트] number++가 아니라 number.value++ (number는 ref 객체)
+          // TODO: number의 값을 1 증가시키세요.
+          // 결과: 버튼을 누를 때마다 세 개의 숫자가 함께 1씩 증가
+
+        }
+        return {
+          number,
+          increment
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
