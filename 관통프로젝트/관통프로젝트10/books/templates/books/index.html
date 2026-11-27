@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>메인 페이지</h1>
+
+  <!-- 기존 카테고리 필터 메뉴 -->
+  <div class="mb-4">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="{% url 'books:index' %}" class="category-link" data-category="">전체</a>
+      </li>
+      {% for category in categories %}
+        <li class="list-inline-item">
+          <a href="{% url 'books:index' %}?category={{ category.name|urlencode }}" class="category-link" data-category="{{ category.name }}">
+            {{ category.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div>
+  <small style="color: #888;">
+    ※ 도서 DB 제공 : 알라딘 인터넷서점(www.aladin.co.kr)
+  </small>
+  </div>  
+
+  <!-- 도서 목록 컨테이너 -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4" id="books-list" aria-live="polite">
+    {% include 'books/_book_list.html' %}
+  </div>
+{% endblock content %}
+
+{% block script %}
+<script>
+  const booksList = document.querySelector('#books-list');
+  const filterError = document.querySelector('#ajax-error');
+  let latestRequest = 0;
+
+  document.querySelectorAll('.category-link').forEach((link) => {
+    link.addEventListener('click', async (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      const requestNumber = ++latestRequest;
+      filterError.textContent = '';
+      try {
+        const response = await axios.get("{% url 'books:filter_category' %}", {
+          params: {category: link.dataset.category},
+        });
+        if (requestNumber === latestRequest) booksList.innerHTML = response.data.html;
+      } catch {
+        if (requestNumber === latestRequest) filterError.textContent = '도서 목록을 불러오지 못했습니다.';
+      }
+    });
+  });
+</script>
+{% endblock script %}

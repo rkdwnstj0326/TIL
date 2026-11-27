@@ -1,0 +1,26 @@
+{% if books %}
+  <p class="small text-body-secondary">
+    {% if used_ai %}
+      AI가 책의 주제, 장르, 분위기를 비교해 골랐습니다.
+    {% else %}
+      장르, 저자, 책 소개를 비교해 골랐습니다.
+    {% endif %}
+  </p>
+  <ol class="list-unstyled row row-cols-1 row-cols-md-3 g-3">
+    {% for book in books %}
+      <li class="col">
+        <a href="{% url 'books:detail' book.pk %}" class="d-flex gap-3 align-items-center border rounded h-100 p-3 text-reset text-decoration-none">
+          {% if book.cover %}
+            <img src="{{ book.cover }}" alt="" width="56" height="80" class="object-fit-contain flex-shrink-0" loading="lazy">
+          {% endif %}
+          <div>
+            <span class="d-block fw-semibold">{{ book.title }}</span>
+            <small class="text-body-secondary">{{ book.author }} · {{ book.category.name }}</small>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
+{% else %}
+  <p>추천할 다른 도서가 아직 없습니다.</p>
+{% endif %}

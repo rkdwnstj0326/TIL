@@ -1,0 +1,10 @@
+<div class="d-flex align-items-baseline gap-2" data-comment>
+  <p>{{ comment.content }}</p>
+  <small><a href="{% url 'accounts:profile' comment.user.username %}">{{ comment.user.username }}</a></small>
+  {% if comment.user == user %}
+    <form method="post" action="{% url 'books:delete_comment' book.pk comment.pk %}" data-ajax data-delete-comment>
+      {% csrf_token %}
+      <button class="btn btn-sm btn-outline-danger" type="submit">삭제</button>
+    </form>
+  {% endif %}
+</div>

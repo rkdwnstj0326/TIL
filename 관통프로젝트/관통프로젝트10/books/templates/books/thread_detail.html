@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+  {% if thread.cover_img %}
+  <div class="mb-3" style="width: 100%;">
+    <img src="{{ thread.cover_img.url }}" alt="Thread Cover Image" class="img-fluid">
+  </div>
+  {% endif %}
+
+  <div class="d-flex flex-row justify-content-between align-items-between">
+    <h1 class="mb-3">{{ thread.title }}</h1>
+    <div>
+      {% if thread.user == user %}
+        <a href="{% url 'books:thread_update' book.pk thread.pk %}" class="btn btn-secondary">수정</a>
+        <form action="{% url 'books:thread_delete' book.pk thread.pk %}" method="POST" class="d-inline ms-2">
+          {% csrf_token %}
+          <input type="submit" value="삭제" class="btn btn-danger">
+        </form>
+      {% endif %}
+    </div>
+  </div>
+  
+  <div class="mb-2">
+    <strong>도서:</strong> <a href="{% url 'books:detail' book.pk %}">{{ book.title }}</a>
+    <strong class="ms-2">작성자:</strong> <a href="{% url 'accounts:profile' thread.user.username %}">{{ thread.user.username }}</a>
+    <strong class="ms-2">독서일:</strong> {{ thread.reading_date }}
+  </div>
+  
+  <div class="mb-3">
+    <p>{{ thread.content }}</p>
+  </div>
+  
+  <div class="d-flex flex-row justify-content-start align-items-center gap-4">
+    <form id="like-form" action="{% url 'books:likes' book.pk thread.pk %}" method="post" data-ajax>
+      {% csrf_token %}
+      <input type="hidden" name="active" value="{{ is_liked|yesno:'false,true' }}">
+      <button class="btn btn-outline-danger" type="submit">{{ is_liked|yesno:'좋아요 취소,좋아요' }}</button>
+    </form>
+    <span aria-live="polite">좋아요 <span id="likes-count">{{ thread.likes.count }}</span>개</span>
+  </div>
+  <hr>
+  
+  <!-- 쓰레드 댓글 출력 섹션 -->
+  <h3>댓글</h3>
+  <div class="mb-3" id="comment-list" aria-live="polite">
+    {% for comment in thread.comments.all %}
+      {% include 'books/_comment.html' %}
+    {% endfor %}
+    <p id="no-comments" {% if thread.comments.all %}hidden{% endif %}>작성된 댓글이 없습니다.</p>
+  </div>
+
+  <!-- 댓글 작성 폼 -->
+  <h4>댓글 작성</h4>
+  <form id="comment-form" method="POST" action="{% url 'books:create_comment' book.pk thread.pk %}" data-ajax>
+    {% csrf_token %}
+    {{ comment_form.content }}
+    <input type="submit" value="전송">
+  </form>
+  
+  <hr>
+  
+  <a href="{% url 'books:detail' thread.book.pk %}" class="btn btn-secondary">BACK</a>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script>
+  document.querySelector('#like-form').addEventListener('ajax:success', (event) => {
+    const form = event.currentTarget;
+    const {active, count} = event.detail;
+    form.elements.active.value = String(!active);
+    form.querySelector('button').textContent = active ? '좋아요 취소' : '좋아요';
+    document.querySelector('#likes-count').textContent = count;
+  });
+
+  const commentList = document.querySelector('#comment-list');
+  const emptyMessage = document.querySelector('#no-comments');
+  document.querySelector('#comment-form').addEventListener('ajax:success', (event) => {
+    emptyMessage.insertAdjacentHTML('beforebegin', event.detail.html);
+    emptyMessage.hidden = true;
+    event.currentTarget.reset();
+  });
+  commentList.addEventListener('ajax:success', (event) => {
+    if (!event.target.matches('[data-delete-comment]')) return;
+    event.target.closest('[data-comment]').remove();
+    emptyMessage.hidden = commentList.querySelector('[data-comment]') !== null;
+  });
+</script>
+{% endblock script %}
+

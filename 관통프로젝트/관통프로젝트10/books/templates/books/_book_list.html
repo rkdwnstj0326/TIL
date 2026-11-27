@@ -1,0 +1,20 @@
+{% if books %}
+      {% for book in books %}
+      <div class="col">
+        <div class="card book-card h-100">
+          {% if book.cover %}
+            <img src="{{ book.cover }}" class="card-img-top" alt="...">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ book.title }}</h5>
+            <p class="card-text">{{ book.description|truncatechars:180 }}</p>
+            <h6 class="card-subtitle mb-2">
+              <a href="{% url 'books:detail' book.pk %}" class="btn btn-success">Detail</a>
+            </h6>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <div>등록된 도서가 없습니다.</div>
+    {% endif %}

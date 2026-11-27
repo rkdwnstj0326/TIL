@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ person.username }}님의 프로필</h1>
+  <hr>
+
+  {% if person.profile_img %}
+    <img src="{{ person.profile_img.url }}" alt="프로필 사진" style="width:200px; height:200px; object-fit: cover; border-radius: 50%; margin-bottom:3rem;">
+  {% endif %}
+  
+  <p>아이디: {{ person.username }}</p>
+  <p>이메일: {{ person.email }}</p>
+  <p>이름: {{ person.last_name }}{{ person.first_name }}</p>
+  <p>성별: {{ person.get_gender_display }}</p>
+  <p>나이: {{ person.age }}</p>
+  <p>주간 평균 독서 시간: {{ person.weekly_avg_reading_time }}시간</p>
+  <p>연간 독서량: {{ person.annual_reading_amount }}권</p>
+  <p>관심 장르: 
+    {% for category in person.interested_genres.all %}
+      <li>{{ category.name }}</li>
+    {% empty %}
+      없음
+    {% endfor %}
+  </p>
+  <hr>
+  <div class="d-flex flex-row justify-content-between align-items-center">
+    <p aria-live="polite">팔로워 <span id="followers">{{ person.followers.count }}</span> · 팔로잉 <span id="followings">{{ person.followings.count }}</span></p>
+    {% if user.is_authenticated and user != person %}
+      <form id="follow-form" action="{% url 'accounts:follow' person.pk %}" method="post" data-ajax>
+        {% csrf_token %}
+        <input type="hidden" name="active" value="{{ is_following|yesno:'false,true' }}">
+        <button class="btn btn-outline-primary" type="submit">{{ is_following|yesno:'팔로우 취소,팔로우' }}</button>
+      </form>
+    {% endif %}
+  </div>
+  <hr>
+  <h2>{{ person.username }}님의 쓰레드 목록</h2>
+  <ul>
+    {% for thread in person.thread_set.all %}
+      <li>
+        <a href="{% url 'books:thread_detail' thread.book.pk thread.pk %}">
+          {{ thread.title }}
+        </a>
+        - 좋아요: {{ thread.likes.count }}
+      </li>
+    {% empty %}
+      <li>작성된 쓰레드가 없습니다.</li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
+
+{% block script %}
+<script>
+  document.querySelector('#follow-form')?.addEventListener('ajax:success', (event) => {
+    const form = event.currentTarget;
+    const {active, followers, followings} = event.detail;
+    form.elements.active.value = String(!active);
+    form.querySelector('button').textContent = active ? '팔로우 취소' : '팔로우';
+    document.querySelector('#followers').textContent = followers;
+    document.querySelector('#followings').textContent = followings;
+  });
+</script>
+{% endblock script %}
